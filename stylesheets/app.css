@@ -1,0 +1,61 @@
+/* Artfully masterminded by ZURB  */
+
+/* -------------------------------------------------- 
+   Table of Contents
+-----------------------------------------------------
+:: Shared Styles
+:: Page Name 1
+:: Page Name 2
+*/
+
+
+/* -----------------------------------------
+   Shared Styles
+----------------------------------------- */
+
+ul li{list-style:none;margin:0;padding:0;}
+
+.row#content{
+              background: transparent url(images/content-bg.png) no-repeat 0 0;
+}
+
+.nav-bar{background:green;}
+.nav-bar li{background-color: green;
+            font-weight: bold;
+            color: #f4f4f4;    
+            border-color: green;
+            border-right: solid 1px green;             
+}
+.nav-bar li:hover,li.active:hover{background-color: green;}
+.nav-bar li a:hover{color:green}
+.nav-bar li.active,li.active:hover{background-color: #f4f4f4;color:green;border-color: green;}
+.nav-bar li.active a,a:hover{ color: green;
+                              background-color: #f4f4f4;
+                              border-color:green;
+}
+.nav-bar > li:last-child{border-color:green}
+ul.flyout li a:hover, .nav-bar li ul{border-color:#f4f4f4}
+ul.flyout li a:hover, .nav-bar li ul li a:hover{border-left: 3px solid green}
+
+.footer{background-color:#484848;
+        min-height: 20%;
+        width:100%;
+        display:block;
+        color: white;
+        text-align: center;
+}
+.expand{width:100%;}
+/* -----------------------------------------
+   Page Home
+----------------------------------------- */
+ul.pagination li.current a,a:hover{background:green}
+
+
+
+
+/* -----------------------------------------
+   Page Name: Ponentes*
+----------------------------------------- */
+
+.ponentes img{float:left;padding:1em;}
+
