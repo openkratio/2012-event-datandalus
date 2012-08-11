@@ -4,7 +4,8 @@
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> 
+<html class="no-js" lang="en"> <!--<![endif]-->
 <head>
   <meta charset="utf-8" />
 
@@ -23,14 +24,34 @@
   <link rel="stylesheet" href="stylesheets/app.css">
 
   <script src="javascripts/modernizr.foundation.js"></script>
-  <script src="javascripts/functions.js"></script>
   <!-- IE Fix for HTML5 Tags -->
   <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 
+  <!-- Included JS Files (Compressed) -->
+  <script src="javascripts/jquery.js"></script>
+  <script src="javascripts/foundation.min.js"></script>
+  
+  <!-- Initialize JS Plugins -->
+  <script src="javascripts/app.js"></script>
+  
+  <script src="javascripts/functions.js"></script>
+  <!-- Load news -->
+  <script>
+    $.ajax({
+      type: "GET",
+      url: "notices/news.xml",
+      dataType: "xml", 
+      success: function(xml,messages){
+        load_news(1,xml);
+      }
+    });
+  </script>
+
 </head>
 <body>
+  <!-- HEADER -->
   <div class="row">
     <div class="twelve columns">
       <img src="images/logo.png" alt="OpenData Sevilla"/>
@@ -38,7 +59,7 @@
       <hr />
     </div>
   </div>
-  
+  <!-- Navigation Menu -->
   <div class="row">
     <div class="twelve columns">
       <ul class="nav-bar">
@@ -63,21 +84,14 @@
   </div>
  
   <div class="row" id="content">
-    <div class="eight columns" id="center">
-      <h3>The Grid</h3>
-
-      <!-- Grid Example -->
-      <div class="row">
-        <div class="twelve columns">
-          <div class="panel">
-            <p>This is a twelve column section in a row. Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
-          </div>
-        </div>
+      <div class="eight columns" id="center">
+        <!-- News list -->
       </div>
-       
-    </div>
-
-    <div class="four columns">
+  </div>
+  
+  <!-- Side Right -->
+  
+  <div class="four columns">
       <p><img src="images/registro.png" alt="Registro"/></p>
       <h4>Informaci&oacute;n</h4>
       <ul>
@@ -100,7 +114,9 @@
       </ul>
     </div>
   </div>
-  
+
+
+  <!-- FOOTER --> 
   <div class="row expand">
     <div class="twelve columns footer">
       <p>Los contenidos de esta obra está bajo una licencia Reconocimiento 3.0 España de Creative Commons. Para ver una copia de la licencia visite</p>
@@ -140,22 +156,5 @@
   
   -->
   
-  <!-- Included JS Files (Compressed) -->
-  <script src="javascripts/jquery.js"></script>
-  <script src="javascripts/foundation.min.js"></script>
-  
-  <!-- Initialize JS Plugins -->
-  <script src="javascripts/app.js"></script>
-  <!-- Load news -->
-  <script>
-    $.ajax({
-      type: "GET",
-      url: "notices/news.xml",
-      dataType: "xml", 
-      success: function(xml,messages){
-        load_news(1,xml);
-      }
-    });
-  </script>
-</body>
+  </body>
 </html>
