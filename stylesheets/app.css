@@ -12,19 +12,34 @@
 /* -----------------------------------------
    Shared Styles
 ----------------------------------------- */
-body{background-color:#fff;font-family:"Open Sans","Helvetica Neue",Helvetica, Arial, sans-serif}
+body{background-color:#fff;}
+
 
 
 ul li{list-style:none;margin:0;padding:0;}
+h1,h2,h3,h4,h5{font-family:"Vast Shadow",cursive;text-shadow: 4px 4px 4px #aaa}
+
+hr{
+    margin: 5em 0;
+    display:block;
+    border: 0;
+    height: 2px;
+    background: #333;
+    background-image: -webkit-linear-gradient(left, #fff, #333, #fff); 
+    background-image:    -moz-linear-gradient(left, #fff, #333, #fff); 
+    background-image:     -ms-linear-gradient(left, #fff, #333, #fff); 
+    background-image:      -o-linear-gradient(left, #fff, #333, #fff); 
+}
 
 .expand{width:100%;}
-.blank{}
-.red{color:#aa0000}
-.green{color:green;}
+.without_shadow{text-shadow:none;}
+.red{color:#aa0000;padding: 5px 0;}
+.green{color:green;padding: 5px 0;}
 
 .shadow-bottom{background: url(images/shadow_nav.png) repeat-x bottom left;padding-bottom:10px}
 
-.a{border:0;text-decoration:none;background:none;}
+.header_title{font-size: 1.5em;font-family: "Vast Shadow",cursive;font-weight:bold;margin:1em}
+
 /*.bg-nav-bar{background:rgba(52,102,0,0.6);height:5em}*/
 .nav-bar{background:none; margin: 1em 0;max-height:200px}
 .nav-bar li{font-weight:bold;border: 0 !important; width:11%;text-align:center;padding:0.5em 1em;margin-left:1em}
@@ -54,7 +69,7 @@ ul.pagination li.current a,a:hover{background:green}
 .left_shadow{background: url('../images/content_bgd.png');}
 
 .header_presentation{width:20%}
-#content{background: url('images/bg_content.gif');padding:2em;}
+#content{padding:2em;}
 #content .sponsors{margin-bottom: 3em;}
 #content .sponsors ul li{float:left; margin-right: 2em;width:20%}
 #content .sponsors ul{width:100%}
