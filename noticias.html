@@ -14,7 +14,8 @@
 
   <title>Open Data Sevilla 2012</title>
   
-  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" >
+  <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" >
+ 
   <!-- Included CSS Files (Uncompressed) -->
   <!--
   <link rel="stylesheet" href="stylesheets/foundation.css">
@@ -38,6 +39,7 @@
   <script src="javascripts/app.js"></script>
   
   <script src="javascripts/functions.js"></script>
+ 
   <!-- Load news -->
   <script>
     $.ajax({
@@ -45,11 +47,11 @@
       url: "notices/news.xml",
       dataType: "xml", 
       success: function(xml,messages){
-        load_last_news(xml);
+        load_news(1,xml);
       }
     });
   </script>
-
+ 
 </head>
 <body>
 
@@ -73,7 +75,7 @@
      <!-- Navigation Menu -->
      <div class="twelve columns">
       <ul class="nav-bar">
-        <li><a href="noticias.html" title="Noticias">Noticias</a></li>
+        <li class="active"><a href="noticias.html" title="Noticias">Noticias</a></li>
         <li><a href="#" title="Programa">Programa</a></li>
         <li><a href="#" title="La Sede">Localizaci&oacute;n</a></li>
         <li><a href="ponentes.html" title="Ponentes">Ponentes</a></li>
@@ -82,79 +84,32 @@
       </ul>
      </div>
     </div>
+
     <div class="row">
-      <div class="twelve columns">
-        <h3>Orbit</h3>
-        <div id="featured">
-         <div><img src="images/opendata2011-1.jpeg" alt="slide image"></div>
-         <div><img src="images/opendata2011-2.jpeg" alt="slide image"></div>
-         <div><img src="http://placehold.it/1200x250&text=Slide_3" alt="slide image"></div>
-        </div>
-      </div>
-    </div> 
-    <script>
-      $(window).load(function(){
-        $("#featured").orbit({
-                              timer: false,
-                              animation: 'fade',
-                              directionalNav: false,
-                              fluid: '16x9'
-                             });
-       });
-    </script>
-    
-    <div class="row">
-      <div class="seven columns" id="center">
-        <!-- News list -->
-      </div>
-      <div class="five columns">
-        <h3>Ponentes</h3>
-        <ul class="side-ponentes">
-          <li><img src="images/ponentes/javier_de_la_cueva.jpg" src="javier de la cueva"/>
-              <span class="name">Javier de la Cueva</span>
-              <span class="resume">Un tio muy majo</span>
-          </li>
-          <li><img src="images/ponentes/javier_de_la_cueva.jpg" src="javier de la cueva"/>
-              <span class="name">Javier de la Cueva</span>
-              <span class="resume">Un tio muy majo</span>
-          </li>
-          <li><img src="images/ponentes/javier_de_la_cueva.jpg" src="javier de la cueva"/>
-              <span class="name">Javier de la Cueva</span>
-              <span class="resume">Un tio muy majo</span>
-          </li>
-          <li><img src="images/ponentes/javier_de_la_cueva.jpg" src="javier de la cueva"/>
-              <span class="name">Javier de la Cueva</span>
-              <span class="resume">Un tio muy majo</span>
-          </li>
-          <li><img src="images/ponentes/javier_de_la_cueva.jpg" src="javier de la cueva"/>
-              <span class="name">Javier de la Cueva</span>
-              <span class="resume">Un tio muy majo</span>
-          </li>
-        </ul> 
-      </div>
-    </div>     
-    <div class="row sponsors">
-      <div class="twelve columns">
-        <h4>Patrocinan</h4>
-        <ul class="disc">
-           <li><a href="http://foundation.zurb.com/docs"><img src="images/entidades/ingenia.png" alt="Ingenia" /></a></li>
-           <li><a href="http://github.com/zurb/foundation"><img src="images/entidades/emergya_logo.jpg" alt="Emergya" /></a></li>
-        </ul>
-      </div>
-      <div class="twelve columns">
-        <h4>Organiza</h4>
-        <ul>
-          <li><a href="http://github.com/zurb/foundation"><img src="images/entidades/sugus.png" alt="Sugus" /></a></li>
-        </ul>
-      </div>
-      <div class="twelve columns">
-        <h4>Redes Sociales</h4>
-        <ul>
-          <li><a href="http://twitter.com/foundationzurb"><img src="images/entidades/twitter.png" alt="" /></a></li>
-        </ul>
-      </div>
+      <div class="nine columns" id="center">
+       <!-- News --> 
+      </div>       
+  
+      <!-- Side Right -->
+  
+     <div class="three columns">
+      <h4>Patrocinan</h4>
+      <ul class="disc">
+        <li><a href="http://foundation.zurb.com/docs"><img src="images/entidades/ingenia.png" alt="Ingenia" /></a></li>
+        <li><a href="http://github.com/zurb/foundation"><img src="images/entidades/emergya_logo.jpg" alt="Emergya" /></a></li>
+      </ul>
+      <h4>Organiza</h4>
+      <ul>
+        <li><a href="http://github.com/zurb/foundation"><img src="images/entidades/sugus.png" alt="Sugus" /></a></li>
+      </ul>
+      <h4>Redes Sociales</h4>
+      <ul>
+        <li><a href="http://twitter.com/foundationzurb"><img src="images/entidades/twitter.png" alt="" /></a></li>
+      </ul>
     </div>
+   </div>
   </div>
+  
   <!-- FOOTER --> 
   <div class="row expand">
     <div class="row expand separate"></div>
@@ -163,7 +118,8 @@
       <img src="images/creative.png" alt="Copyrights"/>
     </div>
   </div> 
- </div> 
+  
+  
   <!-- Included JS Files (Uncompressed) -->
   <!--
   
@@ -193,10 +149,8 @@
   
   <script src="javascripts/jquery.foundation.topbar.js"></script>
   
-  -->  
-  <!-- Initialize JS Plugins -->
-
-  <script src="javascripts/app.js"></script>
+  -->
   
   </body>
 </html>
+

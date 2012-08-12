@@ -22,56 +22,63 @@
   -->
   
   <!-- Included CSS Files (Compressed) -->
-  <link rel="stylesheet" href="../stylesheets/foundation.min.css">
-  <link rel="stylesheet" href="../stylesheets/app.css">
+  <link rel="stylesheet" href="stylesheets/foundation.min.css">
+  <link rel="stylesheet" href="stylesheets/app.css">
 
-  <script src="../javascripts/modernizr.foundation.js"></script>
+  <script src="javascripts/modernizr.foundation.js"></script>
   <!-- IE Fix for HTML5 Tags -->
   <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 
   <!-- Included JS Files (Compressed) -->
-  <script src="../javascripts/jquery.js"></script>
-  <script src="../javascripts/foundation.min.js"></script>
+  <script src="javascripts/jquery.js"></script>
+  <script src="javascripts/foundation.min.js"></script>
   
   <!-- Initialize JS Plugins -->
-  <script src="../javascripts/app.js"></script>
+  <script src="javascripts/app.js"></script>
   
-  <script src="../javascripts/functions.js"></script>
+  <script src="javascripts/functions.js"></script>
   
 </head>
 <body>
 
-  <!-- Navigation Menu -->
-  <div class="row">
-    <div class="twelve columns">
-      <ul class="nav-bar">
-        <li class="active"><a href="/OpenData" title="Inicio">Inicio</a></li>
-        <li><a href="#" title="Programa">Programa</a></li>
-        <li><a href="#" title="La Sede">La Sede</a></li>
-        <li><a href="#" title="Ponentes">Ponentes</a></li>
-        <li><a href="#" title="Sala de prensa">Sala de prensa</a></li>
-        <li><a href="#" title="Acceso a tu cuenta">Accede a tu cuenta</a></li>
-      </ul>
-    </div>
+  <!-- HEADER -->
+  <div class="expand"> 
+   <div class="row expand separate"></div>
+   <div class="row">
+     <div class="four columns">
+       <a href="/OpenData" title="Inicio" ><img src="images/logo.png" alt="OpenData Sevilla"/></a>
+       <p>OpenData Sevilla <strong>2012</strong> </p> 
+     </div> 
+     <div class="eigth columns">
+       <h3> Nombre del evento 2012 </h3>
+     </div>
+   </div>
   </div>
 
-  <!-- HEADER -->
-  <div class="row">
-    <div class="twelve columns">
-      <img src="../images/logo.png" alt="OpenData Sevilla"/>
-      <p>OpenData Sevilla <strong>2012</strong> </p>   
+  <!-- Content --> 
+  <div class="expand" id="content"> 
+   <div class="row">
+     <!-- Navigation Menu -->
+     <div class="twelve columns">
+      <ul class="nav-bar">
+        <li><a href="noticias.html" title="Noticias">Noticias</a></li>
+        <li><a href="#" title="Programa">Programa</a></li>
+        <li><a href="#" title="La Sede">Localizaci&oacute;n</a></li>
+        <li class="active"><a href="ponentes.html" title="Ponentes">Ponentes</a></li>
+        <li><a href="#" title="Sala de prensa">Sala de prensa</a></li>
+        <li><a href="#" title="Acceso a tu cuenta">Sobre nosotros</a></li>
+      </ul>
+     </div>
     </div>
-  </div>
-  
-  <div id="content" class="expand">
-    <div class="row" id="content">
+
+    <div class="row">
       <div class="nine columns ponentes" id="center">
         <h2>Ponentes</h2>
         <div class="row">
           <h3>Javier de la Cueva</h3>
-          <img src="../images/ponentes/javier_de_la_cueva.jpg" alt="Foto Javier de la Cueva" />
+          <img src="images/ponentes/javier_de_la_cueva.jpg" alt="Foto Javier de la Cueva" />
           <p>Javier de la Cueva (Madrid, 1962) trabaja como <strong>abogado</strong>. En sus manos ha estado la defensa, entre otros, de Ladinamo (<strong>primera sentencia que reconoció el Copyleft</strong>), de Sharemula (que confirmó que las <strong>webs de enlaces a archivos en redes p2p no cometen delitos<strong>).</p>
           <p>Creador e impulsor de los Procedimientos Libres, su primer procedimiento fue la demanda contra el canon en los soportes digitales. </p>
           <p>Se dedica en la actualidad, además de a su trabajo como abogado, a programar diversos proyectos como el Proyecto Kelsen (framework de gestión de información jurídica bajo licencia AGPL), la Ontología Jurídica Libre, a mantener el catálogo de Opengov.es o a diseñar Praeter Orwell.</p>
@@ -81,7 +88,7 @@
        
         <div class="row">
           <h3>Javier de la Cueva</h3>
-          <img src="../images/ponentes/javier_de_la_cueva.jpg" alt="Foto Javier de la Cueva" />
+          <img src="images/ponentes/javier_de_la_cueva.jpg" alt="Foto Javier de la Cueva" />
           <p>Javier de la Cueva (Madrid, 1962) trabaja como <strong>abogado</strong>. En sus manos ha estado la defensa, entre otros, de Ladinamo (<strong>primera sentencia que reconoció el Copyleft</strong>), de Sharemula (que confirmó que las <strong>webs de enlaces a archivos en redes p2p no cometen delitos<strong>).</p>
           <p>Creador e impulsor de los Procedimientos Libres, su primer procedimiento fue la demanda contra el canon en los soportes digitales. </p>
           <p>Se dedica en la actualidad, además de a su trabajo como abogado, a programar diversos proyectos como el Proyecto Kelsen (framework de gestión de información jurídica bajo licencia AGPL), la Ontología Jurídica Libre, a mantener el catálogo de Opengov.es o a diseñar Praeter Orwell.</p>
@@ -91,7 +98,7 @@
 
         <div class="row">
           <h3>Javier de la Cueva</h3>
-          <img src="../images/ponentes/javier_de_la_cueva.jpg" alt="Foto Javier de la Cueva" />
+          <img src="images/ponentes/javier_de_la_cueva.jpg" alt="Foto Javier de la Cueva" />
           <p>Javier de la Cueva (Madrid, 1962) trabaja como <strong>abogado</strong>. En sus manos ha estado la defensa, entre otros, de Ladinamo (<strong>primera sentencia que reconoció el Copyleft</strong>), de Sharemula (que confirmó que las <strong>webs de enlaces a archivos en redes p2p no cometen delitos<strong>).</p>
           <p>Creador e impulsor de los Procedimientos Libres, su primer procedimiento fue la demanda contra el canon en los soportes digitales. </p>
           <p>Se dedica en la actualidad, además de a su trabajo como abogado, a programar diversos proyectos como el Proyecto Kelsen (framework de gestión de información jurídica bajo licencia AGPL), la Ontología Jurídica Libre, a mantener el catálogo de Opengov.es o a diseñar Praeter Orwell.</p>
@@ -104,25 +111,18 @@
       <!-- Side Right -->
   
      <div class="three columns">
-      <p><img src="../images/registro.png" alt="Registro"/></p>
-      <h4>Informaci&oacute;n</h4>
-      <ul>
-        <li>¿Qué es OpenData?</li>
-        <li>Programa</li>
-        <li>Ponentes</li>
-      </ul>
       <h4>Patrocinan</h4>
       <ul class="disc">
-        <li><a href="http://foundation.zurb.com/docs"><img src="../images/entidades/ingenia.png" alt="Ingenia" /></a></li>
-        <li><a href="http://github.com/zurb/foundation"><img src="../images/entidades/emergya_logo.jpg" alt="Emergya" /></a></li>
+        <li><a href="http://foundation.zurb.com/docs"><img src="images/entidades/ingenia.png" alt="Ingenia" /></a></li>
+        <li><a href="http://github.com/zurb/foundation"><img src="images/entidades/emergya_logo.jpg" alt="Emergya" /></a></li>
       </ul>
       <h4>Organiza</h4>
       <ul>
-        <li><a href="http://github.com/zurb/foundation"><img src="../images/entidades/sugus.png" alt="Sugus" /></a></li>
+        <li><a href="http://github.com/zurb/foundation"><img src="images/entidades/sugus.png" alt="Sugus" /></a></li>
       </ul>
       <h4>Redes Sociales</h4>
       <ul>
-        <li><a href="http://twitter.com/foundationzurb"><img src="../images/entidades/twitter.png" alt="" /></a></li>
+        <li><a href="http://twitter.com/foundationzurb"><img src="images/entidades/twitter.png" alt="" /></a></li>
       </ul>
     </div>
    </div>
@@ -130,6 +130,7 @@
   
   <!-- FOOTER --> 
   <div class="row expand">
+    <div class="row expand separate"></div>
     <div class="twelve columns footer">
       <p>Los contenidos de esta obra está bajo una licencia Reconocimiento 3.0 España de Creative Commons. Para ver una copia de la licencia visite</p>
       <img src="images/creative.png" alt="Copyrights"/>
