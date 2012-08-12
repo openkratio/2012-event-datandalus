@@ -13,6 +13,37 @@ function load_page(page,id){
    $('#'+id).load(page);
 }
 
+// Function to load news from xml: notices/news.xml . 
+// Initial call load the last <news_per_pages> news from xml file.
+
+function load_last_news(xml){
+ 
+   // Load xml file value in a global variable
+   if(xml_news==""){
+    xml_news = xml;
+   }
+
+   // Default values for xml and page variables: 
+   xml = typeof xml !== "undefined" ? xml : xml_news;
+   
+   var news = $(xml),
+       html = "";  
+ 
+   var all_news = $('new',xml);
+
+   news = all_news.slice(0,2);
+
+   // Build news blocks.
+   news.each(function(){
+      html = html+"<div class='row'><div class='twelve columns'>";
+      html = html + "<h3>"+$("title",this).text()+"</h3>";
+      html = html + unescape($("body",this).text()) +"";
+      html = html + '</div></div>';
+   });   
+
+   $('#center').html(html);
+}
+
 
 // Function to load news from xml: notices/news.xml . 
 // Initial call load the last <news_per_pages> news from xml file.

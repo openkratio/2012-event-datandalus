@@ -45,7 +45,7 @@
       url: "notices/news.xml",
       dataType: "xml", 
       success: function(xml,messages){
-        load_last_news(xml);
+        load_news(1,xml);
       }
     });
   </script>
@@ -54,34 +54,17 @@
 <body>
 
   <!-- HEADER -->
-  <div class="expand"> 
-   <div class="row expand separate"></div>
-   <div class="row">
-     <div class="four columns">
-       <a href="/" title="Inicio" ><img src="images/logo.png" alt="OpenData Sevilla"/></a>
-       <p>OpenData Sevilla <strong>2012</strong> </p> 
-     </div> 
-     <div class="eigth columns">
-       <h3> Nombre del evento 2012 </h3>
-     </div>
-   </div>
-   <div class="row">
-     <!-- slides -->   
-     <div class="nine columns">
-      <div id="featured">
-        <div><img src="images/opendata2011-1.jpeg" alt="slide image"></div>
-        <div><img src="images/opendata2011-2.jpeg" alt="slide image2"></div>
-        <div><img src="images/opendata2013-3.jpeg" alt="slide image3"></div>
-      </div>
-     </div>
-     <script>
-      $(window).load(function(){
-        $("#featured").orbit();
-       });
-     </script>
+  <div class="row">
+    <div class="twelve columns">
+      <a href="/" title="Inicio" ><img src="images/logo.png" alt="OpenData Sevilla"/></a>
+      <p>OpenData Sevilla <strong>2012</strong> </p> 
+    </div>
+  </div>
 
-     <!-- Navigation Menu -->
-     <div class="three columns">
+  <!-- Navigation Menu -->
+  <div class="expand bg-nav-bar">
+   <div class="row">
+    <div class="twelve columns">
       <ul class="nav-bar">
         <li class="active"><a href="/OpenData" title="Noticias">Noticias</a></li>
         <li><a href="#" title="Programa">Programa</a></li>
@@ -92,47 +75,68 @@
       </ul>
     </div>
    </div> 
-      
   </div>
 
   <!-- Content --> 
   <div class="expand" id="content">
-    <div class="row expand separate"></div>
     <div class="row">
-      <div class="twelve columns" id="center">
+      <div class="eight columns" id="center">
         <!-- News list -->
       </div>
-    </div>     
-    <div class="row sponsors">
-      <div class="twelve columns">
-        <h4>Patrocinan</h4>
-        <ul class="disc">
-           <li><a href="http://foundation.zurb.com/docs"><img src="images/entidades/ingenia.png" alt="Ingenia" /></a></li>
-           <li><a href="http://github.com/zurb/foundation"><img src="images/entidades/emergya_logo.jpg" alt="Emergya" /></a></li>
-        </ul>
-      </div>
-      <div class="twelve columns">
-        <h4>Organiza</h4>
-        <ul>
-          <li><a href="http://github.com/zurb/foundation"><img src="images/entidades/sugus.png" alt="Sugus" /></a></li>
-        </ul>
-      </div>
-      <div class="twelve columns">
-        <h4>Redes Sociales</h4>
-        <ul>
-          <li><a href="http://twitter.com/foundationzurb"><img src="images/entidades/twitter.png" alt="" /></a></li>
-        </ul>
-      </div>
+  
+  
+      <!-- Side Right -->
+  
+     <div class="four columns">
+      <p><img src="images/registro.png" alt="Registro"/></p>
+      <h4>Informaci&oacute;n</h4>
+      <ul>
+        <li>¿Qué es OpenData?</li>
+        <li>Programa</li>
+        <li>Ponentes</li>
+      </ul>
+      <h4>Patrocinan</h4>
+      <ul class="disc">
+        <li><a href="http://foundation.zurb.com/docs"><img src="images/entidades/ingenia.png" alt="Ingenia" /></a></li>
+        <li><a href="http://github.com/zurb/foundation"><img src="images/entidades/emergya_logo.jpg" alt="Emergya" /></a></li>
+      </ul>
+      <h4>Organiza</h4>
+      <ul>
+        <li><a href="http://github.com/zurb/foundation"><img src="images/entidades/sugus.png" alt="Sugus" /></a></li>
+      </ul>
+      <h4>Redes Sociales</h4>
+      <ul>
+        <li><a href="http://twitter.com/foundationzurb"><img src="images/entidades/twitter.png" alt="" /></a></li>
+      </ul>
     </div>
-    
+  </div>
+  
+  <div class="row">
+    <div class="twelve columns">
+      <h4>Patrocinan</h4>
+      <ul class="disc">
+        <li><a href="http://foundation.zurb.com/docs"><img src="images/entidades/ingenia.png" alt="Ingenia" /></a></li>
+        <li><a href="http://github.com/zurb/foundation"><img src="images/entidades/emergya_logo.jpg" alt="Emergya" /></a></li>
+      </ul>
+      <h4>Organiza</h4>
+      <ul>
+        <li><a href="http://github.com/zurb/foundation"><img src="images/entidades/sugus.png" alt="Sugus" /></a></li>
+      </ul>
+      <h4>Redes Sociales</h4>
+      <ul>
+        <li><a href="http://twitter.com/foundationzurb"><img src="images/entidades/twitter.png" alt="" /></a></li>
+      </ul>
+    </div>
+   </div>
+  </div>
   <!-- FOOTER --> 
   <div class="row expand">
-    <div class="row expand separate"></div>
     <div class="twelve columns footer">
       <p>Los contenidos de esta obra está bajo una licencia Reconocimiento 3.0 España de Creative Commons. Para ver una copia de la licencia visite</p>
       <img src="images/creative.png" alt="Copyrights"/>
     </div>
   </div> 
+  
   
   <!-- Included JS Files (Uncompressed) -->
   <!--
@@ -163,10 +167,7 @@
   
   <script src="javascripts/jquery.foundation.topbar.js"></script>
   
-  -->  
-  <!-- Initialize JS Plugins -->
-
-  <script src="javascripts/app.js"></script>
+  -->
   
   </body>
 </html>
