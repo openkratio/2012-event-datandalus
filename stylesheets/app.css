@@ -12,21 +12,23 @@
 /* -----------------------------------------
    Shared Styles
 ----------------------------------------- */
-body{background-color:#ccffcc;font-family:"Open Sans","Helvetica Neue",Helvetica, Arial, sans-serif}
+body{background-color:#fff;font-family:"Open Sans","Helvetica Neue",Helvetica, Arial, sans-serif}
 
 
 ul li{list-style:none;margin:0;padding:0;}
 
 .expand{width:100%;}
 .blank{}
+.red{color:#aa0000}
+.green{color:green;}
 
 .shadow-bottom{background: url(images/shadow_nav.png) repeat-x bottom left;padding-bottom:10px}
 
 .a{border:0;text-decoration:none;background:none;}
 /*.bg-nav-bar{background:rgba(52,102,0,0.6);height:5em}*/
 .nav-bar{background:none; margin: 1em 0;max-height:200px}
-.nav-bar li{font-weight:bold; color:black !important; border: 0 !important; width:11%;text-align:center;vertical-align:middle;margin: 3em 0.5em 0 0.5em}
-.nav-bar li.logo{width:20%;margin: 0 1%}
+.nav-bar li{font-weight:bold;border: 0 !important; width:11%;text-align:center;padding:0.5em 1em;margin-left:1em}
+.nav-bar li.logo{width:20%;font-weight:bold;size:1em;margin: 0 1%}
 .nav-bar li a{color:green;background:none}
 .nav-bar li a:hover{color:green;background:#f4f4f4}
 .nav-bar li.active,li.active:hover{background-color: green;color:green;}
