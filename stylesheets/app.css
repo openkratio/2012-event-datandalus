@@ -23,6 +23,13 @@
   src: local('Ranchers'), local('Ranchers-Regular'), url(http://themes.googleusercontent.com/static/fonts/ranchers/v1/E34kymtaVEvz9DHCAGmTDvesZW2xOQ-xsNqO47m55DA.woff) format('woff');
 }
 
+@font-face {
+  font-family: 'Chango';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Chango Regular'), local('Chango-Regular'), url(http://themes.googleusercontent.com/static/fonts/chango/v2/nbaquFP0ZZ_smqykJINU8Q.woff) format('woff');
+}
+
 /* -----------------------------------------
    Shared Styles
 ----------------------------------------- */
@@ -30,7 +37,7 @@ body{background-color:#fff;}
 
 
 ul li{list-style:none;margin:0;padding:0;}
-h1,h2,h3,h4,h5{font-family:"Vast Shadow",cursive;}
+h1,h2,h3,h4,h5{font-family:"Helvetica",cursive;}
 
 hr{
     margin: 5em 0;
@@ -134,5 +141,11 @@ hr{
 
 .ponentes img{float:left;padding-right:0.5em;max-width:30%;}
 .ponentes p{width:70%;float:right;}
-.ponentes h3{width:100%;text-align:right;color:#c4c4c4}
+.ponentes h3{width:100%;text-align:right;color:#999}
+
+/* -----------------------------------------
+   Page Name: Noticias
+----------------------------------------- */
+
+#content ul.pagination li.current a,a:hover{background-color: #00aa00}
 
