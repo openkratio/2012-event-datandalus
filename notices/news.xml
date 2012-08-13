@@ -1,22 +1,35 @@
 <?xml version="1.0"?>
  <news>
   <new>
+    <title>Avances en la Comisión Europea en materia de Open Data y RISP</title>
+    <body>
+      &lt;p&gt;Tal y como se viene afirmando últimamente, &lt;a href="http://europa.eu/rapid/press-release_SPEECH-12-149_en.htm" title="Open Data From Crisis of Trust to Open Governing" target="_blank" &gt;los datos son el nuevo combustible que alimenta la era digital&lt;/a&gt;. Si tenemos en cuenta el amplio rango de oportunidades que el Open Data puede proporcionarnos, no es ninguna sorpresa que dentro de los planes de la Comisión Europea esté el continuar revolucionando la forma en la que las autoridades públicas comparten sus datos. A continuación se muestra una visión general de cuáles son las acciones llevadas a cabo por la CE hasta el momento en materia de Open Data e Información del sector público, así como una revisión de las acciones futuras más inmediatas.&lt;/p&gt;
+     &lt;ul&gt; 
+       &lt;li&gt; Autor: &lt;a href="http://datos.fundacionctic.org/author/carlos/" title="Enlace al autor" target="_blank"&gt; Carlos Iglesia &lt;/a&gt; &lt;li&gt;
+       &lt;li&gt; &lt;a href="http://datos.fundacionctic.org/2012/10/avances-de-la-comision-europea-en-materia-de-open-data-y-risp/" title="Enlace a la fuente de la noticia" target="_blank"&gt; Enlace externo&lt;/a&gt; &lt;/li&gt;  
+     &lt;/ul&gt;
+    </body>
+  </new>
+  <new>
    <title>Iniciativa #adoptaunaplaya de @opendatasev</title>
    <body>
       &lt;p&gt; El grupo &lt;b&gt;Opendata Sevilla&lt;/b&gt; está organizando sus &lt;b&gt;II Jornadas Gobierno Abierto y Opendata&lt;/b&gt; que se celebrarán en la Universidad Pablo de Olavide los días 23 y 24 de noviembre. &lt;/p&gt;
   
       &lt;p&gt;Dentro de sus actividades, como acción de impacto y antesala de las jornadas, hemos lanzado la iniciativa &lt;b&gt;“adopta una playa”&lt;/b&gt; (#adoptaunaplaya") a través de la cual se pretende generar un dataset con los datos de las mediciones de calidad de las aguas de baño de España, desde una playa, hasta un río, laguna, etc. Una vez contemos con todos los datos llevaremos a cabo varios ejercicios de visualización de datos.&lt;/p&gt;
 
-      &lt;h5&gt;Cómo colaborar&lt;h5&gt;
+      &lt;h5&gt;Cómo colaborar&lt;/h5&gt;
       &lt;p&gt;La iniciativa consiste fundamentalmente en que la persona que quiera colaborar con nosotros adopte un espacio de baño y se haga responsable de cargar en un fichero público los datos de ese espacio; se tarda menos de 5 minutos. Puedes encontrar las instrucciones en la web de #adoptaunaplaya.&lt;/p&gt;
       &lt;p&gt;Los datos se recopilan a través del Sistema de Información Nacional de Aguas de Baño (Proyecto Nayade), dependiente del Ministerio de Sanidad, Servicios Sociales e Igualdad el cual se encarga de realizar las mediciones de calidad de aguas de baño.&lt;/p&gt;
 
-      &lt;h5&gt;Posibles aplicaciones&lt;h5&gt;
+      &lt;h5&gt;Posibles aplicaciones&lt;/h5&gt;
       &lt;p&gt;Si eres investigador/a, profesor/a, periodista, ecologista, estadista, etc. seguro que se te ocurren multitud de aplicaciones y posibles formas de sacar partido a esta información. Nosotros vamos a proponer la siguiente: llevar a cabo una geolocalización de los datos y posteriormente cruzar dicha información con los datos del Registro Estatal de Emisiones y Fuentes Contaminantes.&lt;/p&gt;
       &lt;p&gt;Además de colaborar, si te resulta interesante la iniciativa, puedes ayudarnos a difundirla entre tus contactos y redes sociales.&lt;/p&gt;
 
-      &lt;h5&gt;Más información&lt;h5&gt;
+      &lt;h5&gt;Más información&lt;/h5&gt;
       &lt;p&gt;Puedes encontrar más información sobre la iniciativa #adoptaunaplaya en: http://adoptaunaplaya.es/site/&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;Autor: &lt;a href="http://es.linkedin.com/in/davidrjordan" title="Enlace al autor" target="_blank"&gt;David Rey&lt;/a&gt; &lt;/li&gt;
+      &lt;/ul&gt;
    </body>
   </new>
  </news>

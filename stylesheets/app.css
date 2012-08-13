@@ -84,7 +84,7 @@ hr{
 
 .nav-bar li a{color:#4C4C4C;min-height:50px;font-size:1.5em !important;padding: .25em 0 0 0 !important}
 .nav-bar li:hover{border: 1px green solid;background:none; color:white;}
-.nav-bar li:last-child a{color:#4c4c4c;}
+.nav-bar li:last-child a{color:#white;}
 .nav-bar li:last-child:hover{border: 1px green solid;background:none;color:white;}
 
 .nav-bar li.active{border:1px #aa0000 solid;background:none}
