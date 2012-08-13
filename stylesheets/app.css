@@ -78,9 +78,9 @@ hr{
 .nav-bar .border-bd{border-radius: 0 0 9px 0;-moz-border-raidus: 0 0 9px 0; -webkit-border-radius: 0 0 9px 0;}
 .nav-bar .border-bi{border-radius: 0 0 0 9px;-moz-border-raidus: 0 0 0 9px; -webkit-border-radius: 0 0 0 9px;}
 
-.nav-bar li a{color:black;min-height:50px}
+.nav-bar li a{color:#4C4C4C;min-height:50px;font-size:1.5em !important;padding: .25em 0 0 0 !important}
 .nav-bar li:hover{border: 1px green solid;background:none}
-.nav-bar li:last-child a{color:black}
+.nav-bar li:last-child a{color:#4c4c4c;}
 .nav-bar li:last-child:hover{border: 1px green solid;background:none}
 
 .nav-bar li.active{border:1px #aa0000 solid;background:none}
