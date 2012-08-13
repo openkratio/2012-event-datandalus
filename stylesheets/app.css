@@ -29,10 +29,8 @@
 body{background-color:#fff;}
 
 
-
 ul li{list-style:none;margin:0;padding:0;}
-h1{font-family:"Ranchers",cursive;}
-h2,h3,h4,h5{font-family:"Vast Shadow",cursive;}
+h1,h2,h3,h4,h5{font-family:"Vast Shadow",cursive;}
 
 hr{
     margin: 5em 0;
@@ -55,19 +53,32 @@ hr{
   -webkit-text-shadow: .04em .04em 0 #fff, .08em .08em 0 #aaa;
 }
 .shadow-bottom{background: url(images/shadow_nav.png) repeat-x bottom left;padding-bottom:10px}
+.shadows{box-shadow: 0.7px 1px 1px #aaa !important;-webkit-box-shadow: 1px 1.5px 1.5px #aaa !important;}
+.shadow_inside{border-box-shadow: inset 0 0 20px 0 #ccc;-webkit-box-shadow: inset 0 0 20px 0 #888}
+
+.border-radius{border-radius: 9px;-moz-border-raidus: 9px; -webkit-border-radius: 9px;}
 
 .header_title {margin:1em;text-align:right;}
-.header_title p{font-size: 1.5em;font-family: "Vast Shadow",cursive;font-weight:bold;}
+.header_title p{font-size: 2em;font-family: Helvetica,cursive;font-weight:bold;}
 
 /*.bg-nav-bar{background:rgba(52,102,0,0.6);height:5em}*/
-.nav-bar{background:none; margin: 1em 0;max-height:200px}
-.nav-bar li{font-weight:bold;border: 0 !important; width:11%;text-align:center;padding:0.5em 1em;margin-left:1em}
-.nav-bar li.logo{width:20%;font-weight:bold;size:1em;margin: 0 1%}
-.nav-bar li a{color:green;background:none}
-.nav-bar li a:hover{color:green;background:#f4f4f4}
+.nav-bar{background:none; margin: 1em 0;width:100%;margin: 0 auto}
+.nav-bar li{font-weight:bold;border: 1px #ccc solid; width:32%;margin: 1em 1% 0 0;text-align:center;}
+
+.nav-bar .border-ai{border-radius: 9px 0 0 0;-moz-border-raidus: 9px 0 0 0; -webkit-border-radius: 9px 0 0 0;}
+.nav-bar .border-ad{border-radius: 0 9px 0 0;-moz-border-raidus: 0 9px 0 0; -webkit-border-radius: 0 9px 0 0;}
+.nav-bar .border-bd{border-radius: 0 0 9px 0;-moz-border-raidus: 0 0 9px 0; -webkit-border-radius: 0 0 9px 0;}
+.nav-bar .border-bi{border-radius: 0 0 0 9px;-moz-border-raidus: 0 0 0 9px; -webkit-border-radius: 0 0 0 9px;}
+
+.nav-bar li a{color:black;min-height:200px}
+.nav-bar li:hover{border: 1px green solid;background:none}
+.nav-bar li:last-child a{color:black}
+.nav-bar li:last-child:hover{border: 1px green solid;background:none}
+
+.nav-bar li.active{border:1px #aa0000 solid;background:none}
 .nav-bar li.active,li.active:hover{background-color: green;color:green;}
-.nav-bar li.active a,a:hover{color:black}
-.nav-bar > li:last-child{border: 0}
+.nav-bar li:last-child{border:1px #ccc solid;}
+
 ul.flyout li a:hover, .nav-bar li ul{border-color:#f4f4f4}
 ul.flyout li a:hover, .nav-bar li ul li a:hover{border-left: 3px solid green}
 
@@ -83,12 +94,19 @@ ul.flyout li a:hover, .nav-bar li ul li a:hover{border-left: 3px solid green}
    Page Home
 ----------------------------------------- */
 
-ul.pagination li.current a,a:hover{background:green}
+
 .right_shadow{background: url('../images/content_bd.png');}
 .left_shadow{background: url('../images/content_bgd.png');}
 
 .header_presentation{width:20%}
 #content{padding:2em;}
+#content .title_content{font-family:Helvetica;font-size:38px;font-weight:bold;text-align:center;padding: 1em 0;display:block}
+#content .explain_event{padding:1em}
+#content .explain_event p{font-size:18px;text-align:center;font-weight:bold;}
+#content .explain_event ul{list-style:none;*list-style:decimal;padding:0;margin-bottom: 4em;text-shadow:0 1px 0 #ccc;}
+#content .explain_event ul li{float:left;width:45%;margin-top: 2em;font-size: 18px}
+#content .explain_event ul li:first-child{margin-right:5%}
+#content .explain_event ul li:last-child{margin-left:5%;}
 #content .sponsors{margin-bottom: 3em;}
 #content .sponsors ul li{float:left; margin-right: 2em;width:20%}
 #content .sponsors ul{width:100%}
@@ -97,6 +115,9 @@ ul.pagination li.current a,a:hover{background:green}
 .side-ponentes li span{color:white;background:#aa0000;font-weight:bold;position:absolute;padding:0 0.25em;left:0}
 .side-ponentes li span.name{top:7.5em}
 .side-ponentes li span.resume{top: 9.5em;}
+.view_more{margin-left:48%;text-align:center;font-weight:bold;}
+
+
 /* -----------------------------------------
    Page Name: Ponentes*
 ----------------------------------------- */
