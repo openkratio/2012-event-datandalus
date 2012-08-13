@@ -7,6 +7,7 @@ var xml_news = "";
   Extra functions 
 */
 
+
 // This function load a partial from a link. Used in navigation menu
 
 function load_page(page,id){

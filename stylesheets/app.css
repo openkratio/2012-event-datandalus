@@ -53,7 +53,8 @@ hr{
   -webkit-text-shadow: .04em .04em 0 #fff, .08em .08em 0 #aaa;
 }
 .shadow-bottom{background: url(images/shadow_nav.png) repeat-x bottom left;padding-bottom:10px}
-.shadows{box-shadow: 0.7px 1px 1px #aaa !important;-webkit-box-shadow: 1px 1.5px 1.5px #aaa !important;}
+.shadows{box-shadow: 1px 1.5px 1.5px #aaa !important;-webkit-box-shadow: 1px 1.5px 1.5px #aaa !important;}
+.shadows-extend{box-shadow: 3px 2.5px 2.5px #aaa !important;-webkit-box-shadow: 3px 2.5px 2.5px #aaa !important;}
 .shadow_inside{border-box-shadow: inset 0 0 20px 0 #ccc;-webkit-box-shadow: inset 0 0 20px 0 #888}
 
 .border-radius{border-radius: 9px;-moz-border-raidus: 9px; -webkit-border-radius: 9px;}
@@ -62,7 +63,7 @@ hr{
 .header_title p{font-size: 2em;font-family: Helvetica,cursive;font-weight:bold;}
 
 /*.bg-nav-bar{background:rgba(52,102,0,0.6);height:5em}*/
-.nav-bar{background:none; margin: 1em 0;width:100%;margin: 0 auto}
+.nav-bar{background:none; margin: 1em 0;width:100%;margin: 0 auto;overflow:hidden;height:10em;}
 .nav-bar li{font-weight:bold;border: 1px #ccc solid; width:32%;margin: 1em 1% 0 0;text-align:center;}
 
 .nav-bar .border-ai{border-radius: 9px 0 0 0;-moz-border-raidus: 9px 0 0 0; -webkit-border-radius: 9px 0 0 0;}
@@ -115,7 +116,18 @@ hr{
 .side-ponentes li span.resume{top: 9.5em;}
 .view_more{margin-left:48%;text-align:center;font-weight:bold;}
 
-
+/* Twitter style */
+#content .twitter_list{margin-bottom: 1em;border:1px green solid;padding:1em .5em 1em .5em;background-color:#208020;font-weight:bold}
+#content .twitter_list .tweet_list a{color:white}
+#content .twitter_list .tweet_list li{margin-bottom: 1em;border-bottom:1px #006F00 solid;padding-bottom: 0.65em}
+#content .twitter_list .tweet_list li:last-child{border:0}
+#content .twitter_list .tweet_list .tweet_odd{}
+#content .twitter_list .tweet_list .tweet_even{}
+#content .twitter_list .tweet_list li .tweet_time{margin-left:12%}
+#content .twitter_list .tweet_list li .tweet_avatar{position:absolute;}
+#content .twitter_list .tweet_list li .tweet_avatar img{border-radius: 3px;-moz-border-raidus: 3px; -webkit-border-radius: 3px;}
+#content .twitter_list .tweet_list li .tweet_text{display:block;margin-left:12%;color:white}
+#content .twitter_list .tweet_list li .tweet_join{display:none;}
 /* -----------------------------------------
    Page Name: Ponentes*
 ----------------------------------------- */

@@ -24,7 +24,7 @@
   <link rel="stylesheet" href="stylesheets/foundation.min.css">
   <link rel="stylesheet" href="stylesheets/app.css">
   
-
+  <script type="text/javascript" src="http://twitter.com/statuses/user_timeline/opendatasev.json" ></script>
 </head>
 <body>
 
@@ -47,12 +47,12 @@
      <!-- Navigation Menu -->
      <div class="twelve columns">
       <ul class="nav-bar">
-        <li class="border-ai shadows"><a href="noticias.html" title="Noticias">Noticias</a></li>
-        <li class="shadows"><a href="#" title="Programa">Programa</a></li>
-        <li class="border-ad shadows"><a href="#" title="La Sede">Localizaci&oacute;n</a></li>
-        <li class="border-bi shadows"><a href="ponentes.html" title="Ponentes">Ponentes</a></li>
-        <li class="shadows"><a href="#" title="Sala de Prensa">Prensa</a></li>
-        <li class="border-bd shadows"><a href="#" title="Nosotros">Nosotros</a></li>
+        <li class="border-ai shadows-extend"><a href="noticias.html" title="Noticias" class="border-ai">Noticias</a></li>
+        <li class="shadows-extend"><a href="#" title="Programa">Programa</a></li>
+        <li class="border-ad shadows-extend"><a href="#" title="La Sede" class="border-ad">Localizaci&oacute;n</a></li>
+        <li class="border-bi shadows-extend"><a href="ponentes.html" title="Ponentes" class="border-bi">Ponentes</a></li>
+        <li class="shadows-extend"><a href="#" title="Sala de Prensa">Prensa</a></li>
+        <li class="border-bd shadows-extend"><a href="#" title="Nosotros" class="border-bd">Nosotros</a></li>
       </ul>
      </div>
     </div>
@@ -108,8 +108,9 @@
       </div>
       <div class="six columns">
         <h4>Twitter</h4>
-        <a class="twitter-timeline" href="https://twitter.com/opendatasev" data-widget-id="258517508196278272">Tweets por @opendatasev</a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        <!--<a class="twitter-timeline" href="https://twitter.com/opendatasev" data-widget-id="258517508196278272">Tweets por @opendatasev</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>-->
+        <div id="twitter" class="twitter_list border-radius shadows-extend"></div>
       </div>
     </div>
         
@@ -182,7 +183,7 @@
   
   <script src="javascripts/functions.js"></script>
  
-
+  <script src="javascripts/tweet.js"></script>
   <script src="javascripts/app.js"></script>
   
   <!-- Load news -->
@@ -205,6 +206,24 @@
                               fluid: '16x9'
                              });
        });
+  </script>
+
+  <script>
+    jQuery(function($){
+        $("#twitter").tweet({
+          join_text: "auto",
+          username: "opendatasev",
+          avatar_size: 48,
+          count: 5,
+          auto_join_text_default: " we said, ",
+          auto_join_text_ed: " we ",
+          auto_join_text_ing: " we were ",
+          auto_join_text_reply: " we replied ",
+          auto_join_text_url: " we were checking out ",
+          loading_text: "Cargando tweets..."
+        });
+      });
+  
   </script>
 
   </body>
