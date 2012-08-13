@@ -9,6 +9,20 @@
 */
 
 
+@font-face {
+  font-family: 'Vast Shadow';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Vast Shadow Regular'), local('VastShadow-Regular'), url(http://themes.googleusercontent.com/static/fonts/vastshadow/v3/vUwwSAve1had6QNw3_7lJYbN6UDyHWBl620a-IRfuBk.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Ranchers';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ranchers'), local('Ranchers-Regular'), url(http://themes.googleusercontent.com/static/fonts/ranchers/v1/E34kymtaVEvz9DHCAGmTDvesZW2xOQ-xsNqO47m55DA.woff) format('woff');
+}
+
 /* -----------------------------------------
    Shared Styles
 ----------------------------------------- */
@@ -17,7 +31,8 @@ body{background-color:#fff;}
 
 
 ul li{list-style:none;margin:0;padding:0;}
-h1,h2,h3,h4,h5{font-family:"Vast Shadow",cursive;text-shadow: 4px 4px 4px #aaa}
+h1{font-family:"Ranchers",cursive;}
+h2,h3,h4,h5{font-family:"Vast Shadow",cursive;}
 
 hr{
     margin: 5em 0;
@@ -35,10 +50,14 @@ hr{
 .without_shadow{text-shadow:none;}
 .red{color:#aa0000;padding: 5px 0;}
 .green{color:green;padding: 5px 0;}
-
+.font-effect-shadow-multiple {
+  text-shadow: .04em .04em 0 #fff,.08em .08em 0 #aaa;
+  -webkit-text-shadow: .04em .04em 0 #fff, .08em .08em 0 #aaa;
+}
 .shadow-bottom{background: url(images/shadow_nav.png) repeat-x bottom left;padding-bottom:10px}
 
-.header_title{font-size: 1.5em;font-family: "Vast Shadow",cursive;font-weight:bold;margin:1em}
+.header_title {margin:1em;text-align:right;}
+.header_title p{font-size: 1.5em;font-family: "Vast Shadow",cursive;font-weight:bold;}
 
 /*.bg-nav-bar{background:rgba(52,102,0,0.6);height:5em}*/
 .nav-bar{background:none; margin: 1em 0;max-height:200px}
