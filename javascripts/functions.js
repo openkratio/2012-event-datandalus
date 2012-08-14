@@ -32,7 +32,7 @@ function load_last_news(xml){
  
    var all_news = $('new',xml);
 
-   news = all_news.slice(0,2);
+   news = all_news.slice(0,1);
 
    // Build news blocks.
    news.each(function(){
