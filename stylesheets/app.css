@@ -149,3 +149,6 @@ hr{
 
 #content ul.pagination li.current a,a:hover{background-color: #00aa00}
 
+#map { height: 400px; width: 90%;}
+.localizacion-desc {width:90%;}
+
