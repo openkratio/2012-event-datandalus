@@ -25,6 +25,7 @@
   <link rel="stylesheet" href="stylesheets/foundation.min.css">
   <link rel="stylesheet" href="stylesheets/app.css">
 
+ 
   <script src="javascripts/modernizr.foundation.js"></script>
   <!-- IE Fix for HTML5 Tags -->
   <!--[if lt IE 9]>
@@ -39,9 +40,29 @@
   <script src="javascripts/app.js"></script>
   
   <script src="javascripts/functions.js"></script>
+
+   <!-- Leaflet related files Files -->
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.4.4/leaflet.css" />
+  <!--[if lte IE 8]>
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.4.4/leaflet.ie.css" />
+  <![endif]-->
+  <script src="http://cdn.leafletjs.com/leaflet-0.4.4/leaflet.js"></script>
  
   <!-- Load news -->
-  <script>
+  <script type="text/javascript">
+    $().ready(function() {
+      //Init map
+      var map = L.map('map').setView([37.35674, -5.94293], 15);
+      L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: 'Datos del mapa &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
+        maxZoom: 18
+      }).addTo(map);
+      var marker = L.marker([37.35674, -5.94293]).addTo(map);
+      marker.bindPopup('<b>Open Data Sevilla</b><br>Universidad Pablo de Olavide.<br/>Edificio 45.').openPopup();
+
+      var popup = L.popup();
+    });
+
     $.ajax({
       type: "GET",
       url: "notices/news.xml",
@@ -90,9 +111,17 @@
    <div class="row">
       <div class="nine columns">
        <h2>Localizaci&oacute;n</h2>
-       <iframe width="90%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.openstreetmap.org/export/embed.html?bbox=-5.94175004959106,37.3157920837402,-5.94102144241333,37.3206481933594,37.3186671&layer=mapnik" class="border-radius shadows-extend"></iframe>        
+       <div class="localizacion-desc">
+          Las jornadas tendr&aacute;n lugar en la <strong>Universidad Pablo de Olavide, edificio 45</strong>. 
+          Se puede llegar a la universidad en transporte p&uacute;blico:
+          <ul>
+            <li><strong>En Metro:</strong> parada Pablo de Olavide de la l&iacute;nea 1.</li> 
+            <li><strong>Autob&uacute;s Tussam:</strong> l&iacute;nea 38.</li>
+        </ul>
+       </div>
+       <div id="map"></div>      
        <span>
-       <p><strong>Univesidad Pablo Olavide</strong></p>
+       <p><strong>Univesidad Pablo Olavide.</strong> Edificio 45.</p>
        <p>Olivar de Quintos, Dos Hermanas (Sevilla, Andaluc&iacute;a)</p>
        <p>41700, Espa&ntilde;a</p>
        </span>
