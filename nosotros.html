@@ -25,6 +25,7 @@
   <link rel="stylesheet" href="stylesheets/foundation.min.css">
   <link rel="stylesheet" href="stylesheets/app.css">
 
+ 
   <script src="javascripts/modernizr.foundation.js"></script>
   <!-- IE Fix for HTML5 Tags -->
   <!--[if lt IE 9]>
@@ -37,13 +38,11 @@
   
   <!-- Initialize JS Plugins -->
   <script src="javascripts/app.js"></script>
-  
-  <script src="javascripts/functions.js"></script>
-  
+  <script src="javascripts/functions.js"></script> 
 </head>
 <body>
 
- <!-- HEADER -->
+  <!-- HEADER -->
   <div class="expand"> 
    <div class="row expand separate"></div>
    <div class="row">
@@ -64,51 +63,62 @@
       <ul class="nav-bar">
         <li class="border-ai shadows-extend"><a href="noticias.html" title="Noticias" class="border-ai">Noticias</a></li>
         <li class="shadows-extend"><a href="#" title="Programa">Programa</a></li>
-        <li class="border-ad shadows-extend"><a href="localizacion.html" title="La Sede" class="border-ad">Localizaci&oacute;n</a></li>
-        <li class="active border-bi shadows-extend"><a href="ponentes.html" title="Ponentes" class="border-bi">Ponentes</a></li>
+        <li class="active border-ad shadows-extend"><a href="localizacion.html" title="La Sede" class="border-ad">Localizaci&oacute;n</a></li>
+        <li class="border-bi shadows-extend"><a href="ponentes.html" title="Ponentes" class="border-bi">Ponentes</a></li>
         <li class="shadows-extend"><a href="#" title="Sala de Prensa">Prensa</a></li>
         <li class="border-bd shadows-extend"><a href="nosotros.html" title="Nosotros" class="border-bd">Nosotros</a></li>
       </ul>
      </div>
     </div>
   </div>
+
   <!-- Content --> 
   <div class="expand" id="content"> 
-    <div class="row">
-      <div class="nine columns ponentes" id="center">
-        <h2>Ponentes</h2>
-        <!--<div class="row">
-          <h3>Javier de la Cueva</h3>
-          <img src="images/ponentes/jav-dc_home.jpg" alt="Foto Javier de la Cueva" />
-          <p>Javier de la Cueva (Madrid, 1962) trabaja como <strong>abogado</strong>. En sus manos ha estado la defensa, entre otros, de Ladinamo (<strong>primera sentencia que reconoció el Copyleft</strong>), de Sharemula (que confirmó que las <strong>webs de enlaces a archivos en redes p2p no cometen delitos<strong>).</p>
-          <p>Creador e impulsor de los Procedimientos Libres, su primer procedimiento fue la demanda contra el canon en los soportes digitales. </p>
-          <p>Se dedica en la actualidad, además de a su trabajo como abogado, a programar diversos proyectos como el Proyecto Kelsen (framework de gestión de información jurídica bajo licencia AGPL), la Ontología Jurídica Libre, a mantener el catálogo de Opengov.es o a diseñar Praeter Orwell.</p>
-          <p>Asimismo es profesor en el Máster de Propiedad Intelectual de la Escuela de Organización Industrial, conferenciante, usuario de GNU/Linux desde 1998 y administrador de sistemas bajo dicho sistema operativo desde 2003. Escribe sus scripts en Python.</p>
-          <p><strong>Imparte:</strong> Blau blau sobre aquello y bla bla sobre esto.
-        </div>
-       
-        <div class="row">
-          <h3>Javier de la Cueva</h3>
-          <img src="images/ponentes/jav-dc_home.jpg" alt="Foto Javier de la Cueva" />
-          <p>Javier de la Cueva (Madrid, 1962) trabaja como <strong>abogado</strong>. En sus manos ha estado la defensa, entre otros, de Ladinamo (<strong>primera sentencia que reconoció el Copyleft</strong>), de Sharemula (que confirmó que las <strong>webs de enlaces a archivos en redes p2p no cometen delitos<strong>).</p>
-          <p>Creador e impulsor de los Procedimientos Libres, su primer procedimiento fue la demanda contra el canon en los soportes digitales. </p>
-          <p>Se dedica en la actualidad, además de a su trabajo como abogado, a programar diversos proyectos como el Proyecto Kelsen (framework de gestión de información jurídica bajo licencia AGPL), la Ontología Jurídica Libre, a mantener el catálogo de Opengov.es o a diseñar Praeter Orwell.</p>
-          <p>Asimismo es profesor en el Máster de Propiedad Intelectual de la Escuela de Organización Industrial, conferenciante, usuario de GNU/Linux desde 1998 y administrador de sistemas bajo dicho sistema operativo desde 2003. Escribe sus scripts en Python.</p>
-          <p><strong>Imparte:</strong> Blau blau sobre aquello y bla bla sobre esto.
-        </div>
-
-        <div class="row">
-          <h3>Javier de la Cueva</h3>
-          <img src="images/ponentes/jav-dc_home.jpg" alt="Foto Javier de la Cueva" />
-          <p>Javier de la Cueva (Madrid, 1962) trabaja como <strong>abogado</strong>. En sus manos ha estado la defensa, entre otros, de Ladinamo (<strong>primera sentencia que reconoció el Copyleft</strong>), de Sharemula (que confirmó que las <strong>webs de enlaces a archivos en redes p2p no cometen delitos<strong>).</p>
-          <p>Creador e impulsor de los Procedimientos Libres, su primer procedimiento fue la demanda contra el canon en los soportes digitales. </p>
-          <p>Se dedica en la actualidad, además de a su trabajo como abogado, a programar diversos proyectos como el Proyecto Kelsen (framework de gestión de información jurídica bajo licencia AGPL), la Ontología Jurídica Libre, a mantener el catálogo de Opengov.es o a diseñar Praeter Orwell.</p>
-          <p>Asimismo es profesor en el Máster de Propiedad Intelectual de la Escuela de Organización Industrial, conferenciante, usuario de GNU/Linux desde 1998 y administrador de sistemas bajo dicho sistema operativo desde 2003. Escribe sus scripts en Python.</p>
-          <p><strong>Imparte:</strong> Blau blau sobre aquello y bla bla sobre esto.
-        </div>-->
-     </div>
-  
-      
+   <div class="row">
+      <div class="nine columns">
+       <h2>El grupo Opendata Sevilla</h2>
+       <div class="localizacion-desc">
+       <p>Opendata Sevilla se inició a raíz de la organización del I Encuentro Opendata Sevilla celebrado en Noviembre del 2011 en la escuela Técnica Superior de Informática de la Universidad de Sevilla. El grupo nace con el objetivo de promover el interés ciudadano por los datos abiertos y su reutilización como fuente de creación de valor social y económica. A lo largo de este año de vida se han realizado actividades de difusión y proyectos ciudadanos como:</p>
+        <table>
+        <tr>
+            <td>
+                <b>Gastos de Sevilla 2012</b><br/>
+                Proyecto Seville-Spending   
+            </td>
+            <td><a href="https://github.com/opendatasevilla/seville-spending">https://github.com/opendatasevilla/seville-spending</a></td>
+        </tr>
+        <tr>
+            <td>
+                <b>Evento W3C España 2011</b><br/>
+                Presentación del grupo
+            </td>
+            <td><a href="http://vimeo.com/35061998">http://vimeo.com/35061998</a></td>
+        </tr>
+        <tr>
+            <td>
+                <b>Open Source World Conference 2011</b><br/>
+                Reunión con líderes del movimiento Open Data España
+            </td>
+            <td><a href="http://www.youtube.com/watch?v=viOji1y3_Cs">http://www.youtube.com/watch?v=viOji1y3_Cs</a></td>
+        </tr>
+        <tr>
+            <td>
+                <b>Seminario sobre Open Data y Gobierno Abierto</b><br/>
+                Curso de Doctorado Universidad de Cádiz
+            </td>
+            <td><a href="http://www.uca.es/es/cargarAplicacionNoticia.do?identificador=5010">http://www.uca.es/es/cargarAplicacionNoticia.do?identificador=5010</a></td>
+        </tr>
+        <tr>
+            <td>
+                <b>I Encuentro Opendata Sevilla</b><br/>
+                Primera actividad desarrollada por el grupo
+            </td>
+            <td><a href="http://vimeo.com/opendatasev">http://vimeo.com/opendatasev</a></td>
+        </tr>
+      </table>
+      </div>
+      </div>
+      <!-- Side Right -->
   
      <div class="three columns">
       <h4>Patrocinan</h4>
@@ -170,4 +180,3 @@
   
   </body>
 </html>
-
