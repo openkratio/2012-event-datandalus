@@ -1,33 +1,22 @@
 <?xml version="1.0"?>
  <news>
   <new>
-   <title>Encuentro OpenData Sevilla 1</title>
+   <title>Iniciativa #adoptaunaplaya de @opendatasev</title>
    <body>
-      &lt;p&gt;La Asociación Sugus/GNU Linux organiza el Encuentro de OpenData de Sevilla. Este encuentro se celebra el viernes 18 de Noviembre de 2011 en el Edificio Rojo del Campus de Reina Mercedes de la Universidad de Sevilla.&lt;/p&gt;
+      &lt;p&gt; El grupo &lt;b&gt;Opendata Sevilla&lt;/b&gt; está organizando sus &lt;b&gt;2ª jornadas sobre Gobierno Abierto y Opendata&lt;/b&gt; que se celebrarán en la Universidad Pablo de Olavide los días 23 y 24 de noviembre. &lt;/p&gt;
   
-      &lt;p&gt;El Encuentro OpenData Sevilla tiene como objetivos principales promover los principios sobre la apertura de datos, sus motivaciones, fundamentos y objetivos dentro de la comunidad universitaria, entre profesionales del sector y miembros de las instituciones públicas. Y por otro lado, sentar las bases para formar una comunidad entorno a este movimiento promoviendo la formación de equipos de trabajo para la realización de proyectos e iniciativas alrededor de Opendata.&lt;/p&gt;
- 
-      &lt;p&gt;En este encuentro se hablará sobre el movimiento Opendata, aspectos legales, iniciativas existentes, los datos en las administraciones públicas, los datos y sus distintos formatos, herramientas disponibles para el tratamiento de datos,etc.&lt;/p&gt;
-   </body>
-  </new>
-  <new>
-   <title>Encuentro OpenData Sevilla 2</title>
-   <body>
-      &lt;p&gt;La Asociación Sugus/GNU Linux organiza el Encuentro de OpenData de Sevilla. Este encuentro se celebra el viernes 18 de Noviembre de 2011 en el Edificio Rojo del Campus de Reina Mercedes de la Universidad de Sevilla.&lt;/p&gt;
-  
-      &lt;p&gt;El Encuentro OpenData Sevilla tiene como objetivos principales promover los principios sobre la apertura de datos, sus motivaciones, fundamentos y objetivos dentro de la comunidad universitaria, entre profesionales del sector y miembros de las instituciones públicas. Y por otro lado, sentar las bases para formar una comunidad entorno a este movimiento promoviendo la formación de equipos de trabajo para la realización de proyectos e iniciativas alrededor de Opendata.&lt;/p&gt;
- 
-      &lt;p&gt;En este encuentro se hablará sobre el movimiento Opendata, aspectos legales, iniciativas existentes, los datos en las administraciones públicas, los datos y sus distintos formatos, herramientas disponibles para el tratamiento de datos,etc.&lt;/p&gt;
-   </body>
-  </new>
-  <new>
-   <title>Encuentro OpenData Sevilla 3</title>
-   <body>
-      &lt;p&gt;La Asociación Sugus/GNU Linux organiza el Encuentro de OpenData de Sevilla. Este encuentro se celebra el viernes 18 de Noviembre de 2011 en el Edificio Rojo del Campus de Reina Mercedes de la Universidad de Sevilla.&lt;/p&gt;
-  
-      &lt;p&gt;El Encuentro OpenData Sevilla tiene como objetivos principales promover los principios sobre la apertura de datos, sus motivaciones, fundamentos y objetivos dentro de la comunidad universitaria, entre profesionales del sector y miembros de las instituciones públicas. Y por otro lado, sentar las bases para formar una comunidad entorno a este movimiento promoviendo la formación de equipos de trabajo para la realización de proyectos e iniciativas alrededor de Opendata.&lt;/p&gt;
- 
-      &lt;p&gt;En este encuentro se hablará sobre el movimiento Opendata, aspectos legales, iniciativas existentes, los datos en las administraciones públicas, los datos y sus distintos formatos, herramientas disponibles para el tratamiento de datos,etc.&lt;/p&gt;
+      &lt;p&gt;Dentro de sus actividades, como acción de impacto y antesala de las jornadas, hemos lanzado la iniciativa &lt;b&gt;“adopta una playa”&lt;/b&gt; (#adoptaunaplaya") a través de la cual se pretende generar un dataset con los datos de las mediciones de calidad de las aguas de baño de España, desde una playa, hasta un río, laguna, etc. Una vez contemos con todos los datos llevaremos a cabo varios ejercicios de visualización de datos.&lt;/p&gt;
+
+      &lt;h5&gt;Cómo colaborar&lt;h5&gt;
+      &lt;p&gt;La iniciativa consiste fundamentalmente en que la persona que quiera colaborar con nosotros adopte un espacio de baño y se haga responsable de cargar en un fichero público los datos de ese espacio; se tarda menos de 5 minutos. Puedes encontrar las instrucciones en la web de #adoptaunaplaya.&lt;/p&gt;
+      &lt;p&gt;Los datos se recopilan a través del Sistema de Información Nacional de Aguas de Baño (Proyecto Nayade), dependiente del Ministerio de Sanidad, Servicios Sociales e Igualdad el cual se encarga de realizar las mediciones de calidad de aguas de baño.&lt;/p&gt;
+
+      &lt;h5&gt;Posibles aplicaciones&lt;h5&gt;
+      &lt;p&gt;Si eres investigador/a, profesor/a, periodista, ecologista, estadista, etc. seguro que se te ocurren multitud de aplicaciones y posibles formas de sacar partido a esta información. Nosotros vamos a proponer la siguiente: llevar a cabo una geolocalización de los datos y posteriormente cruzar dicha información con los datos del Registro Estatal de Emisiones y Fuentes Contaminantes.&lt;/p&gt;
+      &lt;p&gt;Además de colaborar, si te resulta interesante la iniciativa, puedes ayudarnos a difundirla entre tus contactos y redes sociales.&lt;/p&gt;
+
+      &lt;h5&gt;Más información&lt;h5&gt;
+      &lt;p&gt;Puedes encontrar más información sobre la iniciativa #adoptaunaplaya en: http://adoptaunaplaya.es/site/&lt;/p&gt;
    </body>
   </new>
  </news>
