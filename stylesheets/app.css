@@ -35,6 +35,10 @@
 ----------------------------------------- */
 body{background-color:#fff;}
 
+a { color: #aa0000;}
+
+a.no-bg:hover { background-color: white; }
+
 
 ul li{list-style:none;margin:0;padding:0;}
 h1,h2,h3,h4,h5{font-family:"Helvetica",cursive;}
@@ -79,9 +83,9 @@ hr{
 .nav-bar .border-bi{border-radius: 0 0 0 9px;-moz-border-raidus: 0 0 0 9px; -webkit-border-radius: 0 0 0 9px;}
 
 .nav-bar li a{color:#4C4C4C;min-height:50px;font-size:1.5em !important;padding: .25em 0 0 0 !important}
-.nav-bar li:hover{border: 1px green solid;background:none}
+.nav-bar li:hover{border: 1px green solid;background:none; color:white;}
 .nav-bar li:last-child a{color:#4c4c4c;}
-.nav-bar li:last-child:hover{border: 1px green solid;background:none}
+.nav-bar li:last-child:hover{border: 1px green solid;background:none;color:white;}
 
 .nav-bar li.active{border:1px #aa0000 solid;background:none}
 .nav-bar li.active,li.active:hover{background-color: green;color:green;}
@@ -147,7 +151,7 @@ hr{
    Page Name: Noticias
 ----------------------------------------- */
 
-#content ul.pagination li.current a,a:hover{background-color: #00aa00}
+#content ul.pagination li.current a,a:hover{background-color: #00aa00; color: white;}
 
 #map { height: 400px; width: 90%;}
 .localizacion-desc {width:90%;}
