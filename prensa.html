@@ -48,31 +48,6 @@
   <![endif]-->
   <script src="http://cdn.leafletjs.com/leaflet-0.4.4/leaflet.js"></script>
  
-  <!-- Load news -->
-  <script type="text/javascript">
-    $().ready(function() {
-      //Init map
-      var map = L.map('map').setView([37.35674, -5.94293], 15);
-      L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: 'Datos del mapa &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
-        maxZoom: 18
-      }).addTo(map);
-      var marker = L.marker([37.35674, -5.94293]).addTo(map);
-      marker.bindPopup('<b>Open Data Sevilla</b><br>Universidad Pablo de Olavide.<br/>Edificio 45.').openPopup();
-
-      var popup = L.popup();
-    });
-
-    $.ajax({
-      type: "GET",
-      url: "notices/news.xml",
-      dataType: "xml", 
-      success: function(xml,messages){
-        load_news(1,xml);
-      }
-    });
-  </script>
- 
 </head>
 <body>
 
@@ -99,7 +74,7 @@
         <li class="shadows-extend"><a href="programa.html" title="Programa">Programa</a></li>
         <li class="active border-ad shadows-extend"><a href="localizacion.html" title="La Sede" class="border-ad">Localizaci&oacute;n</a></li>
         <li class="border-bi shadows-extend"><a href="ponentes.html" title="Ponentes" class="border-bi">Ponentes</a></li>
-        <li class="shadows-extend"><a href="#" title="Sala de Prensa">Prensa</a></li>
+        <li class="shadows-extend"><a href="prensa.html" title="Sala de Prensa">Prensa</a></li>
         <li class="border-bd shadows-extend"><a href="nosotros.html" title="Nosotros" class="border-bd">Nosotros</a></li>
       </ul>
      </div>
