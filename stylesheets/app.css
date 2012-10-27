@@ -115,6 +115,7 @@ hr{
 
 .organizadores h4{color:white;}
 .organizadores ul li{float:left;width:10%;margin-left:5%}
+.organizadores ul li#upo{width:15%}
 .organizadores ul li:first-child{margin-left:0px}
 .organizadores ul li img{width:100%}
 @media screen and (max-width:768px){
