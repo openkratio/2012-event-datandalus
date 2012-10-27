@@ -143,11 +143,18 @@ hr{
 .side-ponentes li{position:relative;float:left;width:32%;margin-right:1%}
 .side-ponentes li img{max-width:100%}
 .side-ponentes li span{color:white;background:#aa0000;font-weight:bold;position:absolute;padding:0 0.25em;left:0}
+@media screen and (min-width:768px){
 .side-ponentes li span.name{top:7.5em}
 .side-ponentes li span.resume{top: 9.5em;}
+}
+@media screen and (max-width:768px)
+{
+.side-ponentes li span{display:none}
+}
 .view_more{margin-left:48%;text-align:center;font-weight:bold;}
 
 /* Twitter style */
+@media screen and (min-width:768px){
 #content .twitter_list{margin-bottom: 1em;border:1px green solid;padding:1em .5em 1em .5em;background-color:#208020;font-weight:bold}
 #content .twitter_list .tweet_list a{color:white}
 #content .twitter_list .tweet_list li{margin-bottom: 1em;border-bottom:1px #006F00 solid;padding-bottom: 0.65em}
@@ -159,6 +166,10 @@ hr{
 #content .twitter_list .tweet_list li .tweet_avatar img{border-radius: 3px;-moz-border-raidus: 3px; -webkit-border-radius: 3px;}
 #content .twitter_list .tweet_list li .tweet_text{display:block;margin-left:12%;color:white}
 #content .twitter_list .tweet_list li .tweet_join{display:none;}
+}
+@media screen and (max-width:768px){
+#content #twitter_block{display:none}
+}
 /* -----------------------------------------
    Page Name: Ponentes*
 ----------------------------------------- */
