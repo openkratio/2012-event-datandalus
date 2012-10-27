@@ -181,8 +181,11 @@ hr{
 
 .ponentes img{float:left;padding-right:0.5em;max-width:30%;}
 .ponentes p{width:70%;float:right;}
-.ponentes h3{width:100%;text-align:right;color:#999}
-
+.ponentes .title{width:100%;overflow:hidden;}
+.ponentes .title h3{width:auto;float:left;color:#999;float:right;}
+.ponentes .title a{float:left;padding:1.25em 0;float:right;}
+.ponentes .title a:hover{background:none;cursor:pointer;}
+.ponentes .title a img{width:1.75em;max-width:100%}
 /* -----------------------------------------
    Page Name: Noticias
 ----------------------------------------- */
