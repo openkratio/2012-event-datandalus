@@ -22,8 +22,16 @@
   
   <!-- Included CSS Files (Compressed) -->
   <link rel="stylesheet" href="stylesheets/foundation.min.css">
+  <!--[if !IE]><!-->
   <link rel="stylesheet" href="stylesheets/app.css">
-  
+  <!--<![endif]-->
+  <!--[if gt IE 9]>
+  <link rel="stylesheer" href="stylesheets/app.css">
+  <![endif]-->
+  <!--[if lt IE 9]>
+  <link rel="stylesheet" href="stylesheets/ie.app.css">
+  <![endif]-->
+  <script type="text/javascript" src="https://getfirebug.com/firebug-lite.js"></script>
   <script type="text/javascript" src="http://twitter.com/statuses/user_timeline/opendatasev.json" ></script>
 </head>
 <body>
@@ -72,7 +80,7 @@
       <div class="nine columns">
         <h3>Patrocinan</h3>
         <ul>
-           <li class="gold"><a class="no-bg" href="http://www.telefonica.es" title="Telefónica" target="_blank"><img src="images/telefonica-logo.jpg" alt="Telefónica" border="0" /></a></li>
+           <li class="gold"><a class="no-bg" href="http://www.telefonica.es" title="Telefonica" target="_blank"><img src="images/telefonica-logo.png" alt="Telefónica" border="0" /></a></li>
            <li><a class="no-bg" href="http://www.emergya.es" title="Emergya" target="_blank"><img src="images/emergya_logo.jpg" alt="Emergya" border="0" /></a></li>
            <li><a class="no-bg" href="http://lippo.es/" title="Lippo" target="_blank"><img src="images/lippo_logo.jpg" alt="Lippo" border="0" /></a></li>
            <li><a class="no-bg" href="http://ximdex.com" title="ximdex" target="_blank"><img src="images/logo_ximdex.png" alt="Ximdex" border="0" /></a></li>

@@ -23,7 +23,16 @@
   
   <!-- Included CSS Files (Compressed) -->
   <link rel="stylesheet" href="stylesheets/foundation.min.css">
+  <!--[if !IE]><!-->
   <link rel="stylesheet" href="stylesheets/app.css">
+  <!--<![endif]-->
+
+  <!--[if gt IE 9]>
+  <link rel="stylesheer" href="stylesheets/app.css">
+  <![endif]-->
+  <!--[if lt IE 9]>
+  <link rel="stylesheet" href="stylesheets/ie.app.css">
+  <![endif]-->
 
   <script src="javascripts/modernizr.foundation.js"></script>
   <!-- IE Fix for HTML5 Tags -->
@@ -97,7 +106,7 @@
      <div class="three columns side">
       <h4>Patrocinan</h4>
       <ul>
-           <li><a class="no-bg" href="http://www.telefonica.es" title="Telefónica" target="_blank"><img src="images/telefonica-logo.jpg" alt="Telefónica" border="0" /></a></li>
+           <li><a class="no-bg" href="http://www.telefonica.es" title="Telefónica" target="_blank"><img src="images/telefonica-logo.png" alt="Telefónica" border="0" /></a></li>
            <li><a class="no-bg" href="http://www.emergya.es" title="Emergya" target="_blank"><img src="images/emergya_logo.jpg" alt="Emergya" border="0" /></a></li>
            <li><a class="no-bg" href="http://lippo.es/" title="Lippo" target="_blank"><img src="images/lippo_logo.jpg" alt="Lippo" border="0" /></a></li>
            <li><a class="no-bg" href="http://ximdex.com" title="ximdex" target="_blank"><img src="images/logo_ximdex.png" alt="Ximdex" border="0" /></a></li>
