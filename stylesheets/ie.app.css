@@ -1,0 +1,191 @@
+/* Artfully masterminded by ZURB  */
+
+/* -------------------------------------------------- 
+   Table of Contents
+-----------------------------------------------------
+:: Shared Styles
+:: Page Home
+:: Page Name: Noticias
+:: Page Name: Ponentes
+*/
+
+
+@font-face {
+  font-family: 'Vast Shadow';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Vast Shadow Regular'), local('VastShadow-Regular'), url(http://themes.googleusercontent.com/static/fonts/vastshadow/v3/vUwwSAve1had6QNw3_7lJYbN6UDyHWBl620a-IRfuBk.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Ranchers';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ranchers'), local('Ranchers-Regular'), url(http://themes.googleusercontent.com/static/fonts/ranchers/v1/E34kymtaVEvz9DHCAGmTDvesZW2xOQ-xsNqO47m55DA.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Chango';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Chango Regular'), local('Chango-Regular'), url(http://themes.googleusercontent.com/static/fonts/chango/v2/nbaquFP0ZZ_smqykJINU8Q.woff) format('woff');
+}
+
+/* -----------------------------------------
+   Shared Styles
+----------------------------------------- */
+body{background-color:#fff;}
+
+a { color:#aa0000;background-color:none !important;}
+a.no-bg{backgrond:white;color:white}
+a.no-bg:hover { background-color: white !important; }
+
+
+ul li{list-style:none;margin:0;padding:0;}
+h1,h2,h3,h4,h5{font-family:"Helvetica",cursive;}
+
+.h4{font-size:2em;}
+.h5{font-size:1.5em;}
+
+hr{
+    margin: 5em 0;
+    display:block;
+    border: 0;
+    height: 2px;
+    background: #333;
+    background-image: -webkit-linear-gradient(left, #fff, #333, #fff); 
+    background-image:    -moz-linear-gradient(left, #fff, #333, #fff); 
+    background-image:     -ms-linear-gradient(left, #fff, #333, #fff); 
+    background-image:      -o-linear-gradient(left, #fff, #333, #fff); 
+}
+
+.expand{width:100%;}
+.without_shadow{text-shadow:none;}
+.red{color:#aa0000;padding: 5px 0;}
+.green{color:green;padding: 5px 0;}
+.font-effect-shadow-multiple {
+  text-shadow: .04em .04em 0 #fff,.08em .08em 0 #aaa;
+  -webkit-text-shadow: .04em .04em 0 #fff, .08em .08em 0 #aaa;
+}
+.shadow-bottom{background: url(images/shadow_nav.png) repeat-x bottom left;padding-bottom:10px}
+.shadows{box-shadow: 1px 1.5px 1.5px #aaa !important;-webkit-box-shadow: 1px 1.5px 1.5px #aaa !important;}
+
+.shadow_inside{border-box-shadow: inset 0 0 20px 0 #ccc;-webkit-box-shadow: inset 0 0 20px 0 #888}
+
+.border-radius{border-radius: 9px;-moz-border-raidus: 9px; -webkit-border-radius: 9px;}
+
+.header_title {margin:1em;text-align:right;}
+.header_title p{font-family: Helvetica,cursive;font-weight:bold;}
+
+.nav-bar{background:white;width:100%;overflow:hidden;height:7em;display:block}
+.nav-bar li{width:33%;color:black;font-size:1.5em;text-align:center;font-weight:bold;overflow:hidden;display:block;border:1px black solid}
+.nav-bar li:hover{background:#aa0000}
+.nav-bar li a{color:#000}
+.nav-bar li a:hover{background:#aa0000;color:white}
+.nav-bar li.active{background:#00aa00;color:white}
+
+
+.separate{display:block;height:10px;background:green url(images/footer_sp.png) no-repeat 50% 0}
+.footer{min-height: 20%;width:100%;display:block;color: white;text-align: center;}
+.footer-bg{background-color:black;color:white !important;}
+
+.organizadores h4{color:white;}
+.organizadores ul li{float:left;width:10%;margin-left:5%}
+.organizadores ul li#upo{width:15%}
+.organizadores ul li:first-child{margin-left:0px}
+.organizadores ul li img{width:100%}
+@media screen and (max-width:768px){
+.side img{width:50%}
+}
+.side a:hover{background-color:white}
+/* -----------------------------------------
+   Page Home
+----------------------------------------- */
+
+
+.right_shadow{background: url('../images/content_bd.png');}
+.left_shadow{background: url('../images/content_bgd.png');}
+
+.header_presentation{width:20%}
+#content{padding:2em;}
+#content .title_content{font-family:Helvetica;font-size:38px;font-weight:bold;text-align:center;padding: 1em 0;display:block}
+#content .explain_event{padding:1em}
+#content .explain_event p{font-size:18px;text-align:center;font-weight:bold;}
+#content .explain_event ul{list-style:none;*list-style:decimal;padding:0;margin-bottom: 4em;text-shadow:0 1px 0 #ccc;}
+#content .explain_event ul li{float:left;width:45%;margin-top: 2em;font-size: 18px}
+#content .explain_event ul li:first-child{margin-right:5%}
+#content .explain_event ul li:last-child{margin-left:5%;}
+#content .sponsors{margin-bottom: 3em;}
+
+#content .sponsors ul li{float:left; margin-right: 1.5%;width:30%;display:block;min-height:8em;}
+#content .sponsors ul.organizacion li{width:50%}
+#content .sponsors ul.organizacion li.upo{width:70%}
+
+
+#content .sponsors a:hover{background-color:white}
+#content .sponsors ul{width:100%}
+#content .sponsors ul li{width:30%}
+#content .sponsors ul li.gold{clear:both;width:100% !important;margin: 2em 0}
+#content .sponsors ul li.gold img{width:40% !important;}
+
+.side-ponentes li{position:relative;float:left;width:32%;margin-right:1%}
+.side-ponentes li img{max-width:100%}
+.side-ponentes li span{color:white;background:#aa0000;font-weight:bold;position:absolute;padding:0 0.25em;left:0}
+
+
+@media screen and (min-width:768px){
+.side-ponentes li span.name{top:7.5em}
+.side-ponentes li span.resume{top: 9.5em;}
+}
+@media screen and (max-width:768px)
+{
+.side-ponentes li span{display:none}
+}
+.view_more{margin-left:48%;text-align:center;font-weight:bold;}
+
+/* Twitter style */
+@media screen and (min-width:768px){
+#content .twitter_list{margin-bottom: 1em;border:1px green solid;padding:1em .5em 1em .5em;background-color:#208020;font-weight:bold}
+#content .twitter_list .tweet_list a{color:white}
+#content .twitter_list .tweet_list li{margin-bottom: 1em;border-bottom:1px #006F00 solid;padding-bottom: 0.65em}
+#content .twitter_list .tweet_list li:last-child{border:0}
+#content .twitter_list .tweet_list .tweet_odd{}
+#content .twitter_list .tweet_list .tweet_even{}
+#content .twitter_list .tweet_list li .tweet_time{margin-left:12%}
+#content .twitter_list .tweet_list li .tweet_avatar{position:absolute;}
+#content .twitter_list .tweet_list li .tweet_avatar img{border-radius: 3px;-moz-border-raidus: 3px; -webkit-border-radius: 3px;}
+#content .twitter_list .tweet_list li .tweet_text{display:block;margin-left:12%;color:white}
+#content .twitter_list .tweet_list li .tweet_join{display:none;}
+}
+@media screen and (max-width:768px){
+#content #twitter_block{display:none}
+}
+
+
+/* -----------------------------------------
+   Page Name: Ponentes*
+----------------------------------------- */
+
+.ponentes img{float:left;padding-right:0.5em;max-width:30%;}
+.ponentes p{width:70%;float:right;}
+.ponentes .title{width:100%;overflow:hidden;}
+.ponentes .title h3{width:auto;float:left;color:#999;float:right;}
+.ponentes .title a{float:left;padding:1.25em 0;float:right;}
+.ponentes .title a:hover{background:none;cursor:pointer;}
+.ponentes .title a img{width:1.75em;max-width:100%}
+/* -----------------------------------------
+   Page Name: Noticias
+----------------------------------------- */
+
+#content .pagination .current a,a:hover{background-color: #00aa00; color: white;}
+
+#map { height: 400px; width: 90%;}
+.localizacion-desc {width:90%;}
+
+/* -----------------------------------------
+   Page Name: Programa
+----------------------------------------- */
+.speaker_corner{margin-top:2em;}
+.speaker_corner img{width:20%;float:left;}
+.speaker_corner p{width:79%;float:right;}
+
