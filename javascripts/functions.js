@@ -61,13 +61,15 @@ function load_news(page,xml){
    page = typeof page !== "undefined" ? page : 1;
 
    
-   var news = $(xml),
-       start = 0+page-1,
-       end = news_per_pages + page-1,
-       html = "";  
+   
  
    var all_news = $('new',xml),
        count = all_news.length;
+
+   var news = $(xml),
+       start = 0+((page-1)*news_per_pages),
+       end = start + news_per_pages,
+       html = "";  
 
    news = all_news.slice(start,end);
 
