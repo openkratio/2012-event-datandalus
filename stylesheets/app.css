@@ -146,7 +146,8 @@ hr{
 #content .sponsors ul.organizacion li.upo{width:70%}
 }
 @media screen and (max-width:768px){
-#content .sponsors ul li{float:left; margin-right:1%;width:49%}
+#content .sponsors ul li{float:left; margin-right:1%;width:49%;overflow:hidden;min-height:112px;}
+.impar{display:none}
 }
 #content .sponsors a:hover{background-color:white}
 #content .sponsors ul{width:100%}
