@@ -1,6 +1,6 @@
 // Global Variables 
 
-var news_per_pages = 2; // News per pages
+var news_per_pages = 4; // News per pages
 var xml_news = "";      
 
 /*

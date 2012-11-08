@@ -1,6 +1,48 @@
 <?xml version="1.0"?>
  <news>
   <new>
+    <title>Ximdex, Desidedatum y Yaco Sistemas nuevos patrocinadores de Open Data Sevilla</title>
+    <body>
+      &lt;p&gt; 
+      La familia de patrocinadores crece y si en la noticia anterior mencionabamos el compromiso por parte de Emergya e Ingenia por continuar dando soporte para proporcionar a todos los asistentes interesados en el movimiento opendata un evento magnifico, ahora toca el turno de agradecer publicamente a los nuevos patrocinadores sus aportaciones
+      &lt;/p&gt;
+      
+      &lt;p&gt;
+      Desde la organización de opendatasev agradecemos a estas empresas su esfuerzo y esperamos que disfruten de unas magnificas jornadas en nuestra compañia. 
+      &lt;/p&gt;
+    </body>
+  </new>
+  <new>
+    <title>Emergya e Ingenia vuelven a apoyar Open Data Sevilla</title>
+    <body>
+      &lt;p&gt; 
+      El año pasado sobre estas fechas se celebraba el primer evento opendatasev. Este evento fue posible gracias al trabajo y esfuerzo de muchos compañeros del grupo, de los compañeros de la asociación SUGUS de la Universidad de Sevilla y como no de sus patrocinadores.
+      &lt;/p&gt;
+      &lt;p&gt;
+      &lt;a href="http://www.flickr.com/photos/anarey/6362686147/in/set-72157628049629937" title="Evento del Año pasado" target="_blank" &gt;Enlace Externo&lt;/a&gt;
+      &lt;/p&gt;
+      &lt;p&gt;
+      Este año, tanto Emergya como Ingenia vuelven a apostar por un evento como este y todos los miembros de la organización del evento les agradecemos enormemente su esfuerzo y aportación. 
+      &lt;/p&gt;
+    </body>
+  </new>
+
+  <new>
+    <title>Klicap colabora en el Hackathon con una instancia de Clinker Cloud</title>
+    <body>
+      &lt;p&gt; 
+      Los compañeros de la empresa Klicap han prestado a través de su producto &lt;strong&gt;Clinker&lt;/strong&gt; patrocinio al evento mediante el suministro de cara al Hackathon del Sábado de una instancia gratuita de Clinker Cloud donde alojaremos todos los proyectos que se desarrollen.
+      &lt;/p&gt;
+      &lt;p&gt;
+      &lt;a href="http://www.clinkerhq.com" target="_blank" title="Clinker" &gt; &lt;img src="images/logo_clinker.png" alt="Clinker" /&gt; &lt;/a&gt;
+      &lt;/p&gt;
+      &lt;p&gt;
+      Clinker es un producto 100% andaluz que permite disponer de un ecosistema software listo para ser usado y que nos vendrá de perlas para alojar todos los desarrollos que hagamos el sábado de una manera centralizada. Desde la organización de opendatasev os damos las gracias por esta generosa aportación! 
+      &lt;/p&gt;
+    </body>
+  </new>
+
+  <new>
     <title>Avances en la Comisión Europea en materia de Open Data y RISP</title>
     <body>
       &lt;p&gt;Tal y como se viene afirmando últimamente, &lt;a href="http://europa.eu/rapid/press-release_SPEECH-12-149_en.htm" title="Open Data From Crisis of Trust to Open Governing" target="_blank" &gt;los datos son el nuevo combustible que alimenta la era digital&lt;/a&gt;. Si tenemos en cuenta el amplio rango de oportunidades que el Open Data puede proporcionarnos, no es ninguna sorpresa que dentro de los planes de la Comisión Europea esté el continuar revolucionando la forma en la que las autoridades públicas comparten sus datos. A continuación se muestra una visión general de cuáles son las acciones llevadas a cabo por la CE hasta el momento en materia de Open Data e Información del sector público, así como una revisión de las acciones futuras más inmediatas.&lt;/p&gt;
@@ -10,6 +52,7 @@
      &lt;/ul&gt;
     </body>
   </new>
+
   <new>
    <title>Iniciativa #adoptaunaplaya de @opendatasev</title>
    <body>
