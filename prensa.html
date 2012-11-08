@@ -25,6 +25,7 @@
   <link rel="stylesheet" href="stylesheets/foundation.min.css">
   <link rel="stylesheet" href="stylesheets/app.css">
 
+ 
   <script src="javascripts/modernizr.foundation.js"></script>
   <!-- IE Fix for HTML5 Tags -->
   <!--[if lt IE 9]>
@@ -39,18 +40,13 @@
   <script src="javascripts/app.js"></script>
   
   <script src="javascripts/functions.js"></script>
- 
-  <!-- Load news -->
-  <script>
-    $.ajax({
-      type: "GET",
-      url: "notices/news.xml",
-      dataType: "xml", 
-      success: function(xml,messages){
-        load_news(1,xml);
-      }
-    });
-  </script>
+
+   <!-- Leaflet related files Files -->
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.4.4/leaflet.css" />
+  <!--[if lte IE 8]>
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.4.4/leaflet.ie.css" />
+  <![endif]-->
+  <script src="http://cdn.leafletjs.com/leaflet-0.4.4/leaflet.js"></script>
  
 </head>
 <body>
@@ -74,11 +70,11 @@
      <!-- Navigation Menu -->
      <div class="twelve columns">
       <ul class="nav-bar">
-        <li class="active border-ai shadows-extend"><a href="noticias.html" title="Noticias" class="border-ai">Noticias</a></li>
+        <li class="border-ai shadows-extend"><a href="noticias.html" title="Noticias" class="border-ai">Noticias</a></li>
         <li class="shadows-extend"><a href="programa.html" title="Programa">Programa</a></li>
         <li class="border-ad shadows-extend"><a href="localizacion.html" title="La Sede" class="border-ad">Localizaci&oacute;n</a></li>
         <li class="border-bi shadows-extend"><a href="ponentes.html" title="Ponentes" class="border-bi">Ponentes</a></li>
-        <li class="shadows-extend"><a href="prensa.html" title="Sala de Prensa">Prensa</a></li>
+        <li class="active shadows-extend"><a href="prensa.html" title="Sala de Prensa">Prensa</a></li>
         <li class="border-bd shadows-extend"><a href="nosotros.html" title="Nosotros" class="border-bd">Nosotros</a></li>
       </ul>
      </div>
@@ -88,10 +84,42 @@
   <!-- Content --> 
   <div class="expand" id="content"> 
    <div class="row">
-      <div class="nine columns" id="center">
-       <!-- News --> 
-      </div>       
-  
+      <div class="nine columns">
+       <h2>Prensa</h2>
+       <div class="localizacion-desc">
+         <p>Los días 23 y 24 de Noviembre el grupo Opendata Sevilla y la Universidad Pablo Olavide celebran las <strong><a href=" http://opendatasevilla.org" target="_blank">II Jornadas Gobierno Abierto y Opendata Sevilla</a></strong>. El objetivo de las jornadas es promover los principios de <strong>transparencia</strong> y acceso a la información, <strong>participación</strong> y colaboración, a través de la apertura de datos públicos, sus motivaciones y objetivos en la ciudadanía, entre profesionales del sector y miembros de las instituciones públicas.</p>
+         <p>El día 23 tratará sobre <strong>jornadas de difusión</strong>, para lo cual se cuenta con la presencia de <a href="http://opendatasevilla.org/ponentes.htmlponentes" target="_blank">ponentes</a> de renombre nacional en materia de Gobierno Abierto y Reutilización de la Información del Sector Público como <strong>Alberto Ortiz de Zárate (P. Vasco), Guzmán Garmendia (Navarra), Emilio García (MINHAP), Miquel Torregrosa (GenCAT), organizaciones ciudadanas como la Fundación Civio (Mar Cabra) o la Coalición Pro-Acceso (Manuel Sánchez de Diego) y empresas infomediarias como Vizzuality (Sergio Álvarez)</strong>.</p>
+         <p>El día 24 se realizarán una serie de <strong><a href="http://opendatasevilla.org/programa.html" target="_blank">sesiones de trabajo</a></strong> entre las que se encuentran confirmadas:
+          <ul>
+            <li><strong>LightTalks</strong> por parte de empresas locales</li>
+            <li><strong>Hackathon</strong> Opendata: desarrollo de aplicaciones con datos que publicará la UPO y con los datos del proyecto <a href="http://adoptaunaplaya.es" target="_blank">adoptaunaplaya.es</a></li>
+            <li><strong>Speaker Corner</strong>, donde ya se ha despertado el interés de grupos que trabajan proyectos muy interesantes, como LinkedOpenData en el entorno Bibliotecario, Tecnopolítica y Minería de Datos.</li>
+          </ul>
+         </p>
+         <p>La entrada al evento para los dos días es gratuita aunque es necesario <strong><a href="http://www.ticketea.com/segundo-evento-opendata-de-sevilla" target="_blank">formalizar inscripción</a></strong> para asistir.</p>
+        <br />
+  			<br />
+  			<br />
+				<p>Para contactar con el equipo organizador solo tienes que enviar un correo a <strong>opendatasev[arroba]gmail[punto]com</strong> o hacernos una mención en la cuenta de Twitter <strong>@opendatasev</strong>.</p>
+				<br />
+				<br />
+				<br />
+        <p><a href="dossier-2012opendatasev.pdf" title="Dossier del Evento OpenDataSev" class="medium alert button">Descarga el Dossier del Evento</a></p>
+				<br />
+				<br />
+				<br />
+				<h5>Ayúdanos a difundir las Jornadas (<a href="https://gist.github.com/4000032" target="_blank">copiar código</a>):</h5>
+				<p>Copia y pega el código en tu web (o blog) para ayudarnos ;)</p>
+				<br/>
+				<p align="center">
+        <a href="http://opendatasevilla.org"><img alt="" src="http://3.bp.blogspot.com/-UKmxKTfEDLo/UJFoWeHcG8I/AAAAAAAAAfM/VyNhU-cZ-lw/s1600/logo.png" width="100" /></br>
+        </br>
+        <a href="http://opendatasevilla.org/programa.html">II JORNADAS GOBIERNO ABIERTO Y OPENDATA</a></br>
+        <a href="http://www.upo.es">Universidad Pablo de Olavide</a></br>
+        Sevilla,  23 y 24 noviembre 2012
+        </p>
+       </div>
+      </div>  
       <!-- Side Right -->
   
      <div class="three columns side">
@@ -116,7 +144,7 @@
    <!-- FOOTER --> 
   <div class="expand footer-bg">
     <div class="row expand separate"></div>
-    <div class="row">
+    <div class="row"> 
      <div class="twelve columns footer">
       <p>Los contenidos de esta obra está bajo una licencia Reconocimiento 3.0 España de Creative Commons. Para ver una copia de la licencia visite</p>
       <img src="images/creative.png" alt="Copyrights"/>

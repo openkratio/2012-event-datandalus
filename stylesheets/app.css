@@ -4,8 +4,9 @@
    Table of Contents
 -----------------------------------------------------
 :: Shared Styles
-:: Page Name 1
-:: Page Name 2
+:: Page Home
+:: Page Name: Noticias
+:: Page Name: Ponentes
 */
 
 
@@ -35,9 +36,8 @@
 ----------------------------------------- */
 body{background-color:#fff;}
 
-a { color: #aa0000;}
-
-a.no-bg:hover { background-color: white; }
+a { color: #aa0000;background-color:none!important;}
+a.no-bg:hover { background-color: white !important; }
 
 
 ul li{list-style:none;margin:0;padding:0;}
@@ -68,7 +68,9 @@ hr{
 }
 .shadow-bottom{background: url(images/shadow_nav.png) repeat-x bottom left;padding-bottom:10px}
 .shadows{box-shadow: 1px 1.5px 1.5px #aaa !important;-webkit-box-shadow: 1px 1.5px 1.5px #aaa !important;}
+@media screen and (min-width:768px){
 .shadows-extend{box-shadow: 3px 2.5px 2.5px #aaa !important;-webkit-box-shadow: 3px 2.5px 2.5px #aaa !important;}
+}
 .shadow_inside{border-box-shadow: inset 0 0 20px 0 #ccc;-webkit-box-shadow: inset 0 0 20px 0 #888}
 
 .border-radius{border-radius: 9px;-moz-border-raidus: 9px; -webkit-border-radius: 9px;}
@@ -76,7 +78,7 @@ hr{
 .header_title {margin:1em;text-align:right;}
 .header_title p{font-family: Helvetica,cursive;font-weight:bold;}
 
-/*.bg-nav-bar{background:rgba(52,102,0,0.6);height:5em}*/
+@media screen and (min-width: 768px){
 .nav-bar{background:none; margin: 1em 0;width:100%;margin: 0 auto;overflow:hidden;height:10em;}
 .nav-bar li{font-weight:bold;border: 1px #ccc solid; width:32%;margin: 1em 1% 0 0;text-align:center;}
 
@@ -84,6 +86,14 @@ hr{
 .nav-bar .border-ad{border-radius: 0 9px 0 0;-moz-border-raidus: 0 9px 0 0; -webkit-border-radius: 0 9px 0 0;}
 .nav-bar .border-bd{border-radius: 0 0 9px 0;-moz-border-raidus: 0 0 9px 0; -webkit-border-radius: 0 0 9px 0;}
 .nav-bar .border-bi{border-radius: 0 0 0 9px;-moz-border-raidus: 0 0 0 9px; -webkit-border-radius: 0 0 0 9px;}
+
+}
+@media screen and (max-width: 768px){
+.nav-bar{background:none; margin: 1em 0;width:100%;margin: 0 auto;overflow:hidden;height:auto;}
+.nav-bar li{font-weight:bold;border: 1px #ccc solid; width:100%;text-align:center;}
+}
+
+
 
 .nav-bar li a{color:#4C4C4C;min-height:50px;font-size:1.5em !important;padding: .25em 0 0 0 !important}
 .nav-bar li:hover{border: 1px green solid;background:none; color:white;}
@@ -105,8 +115,13 @@ hr{
 
 .organizadores h4{color:white;}
 .organizadores ul li{float:left;width:10%;margin-left:5%}
+.organizadores ul li#upo{width:15%}
 .organizadores ul li:first-child{margin-left:0px}
 .organizadores ul li img{width:100%}
+@media screen and (max-width:768px){
+.side img{width:50%}
+}
+.side a:hover{background-color:white}
 /* -----------------------------------------
    Page Home
 ----------------------------------------- */
@@ -125,16 +140,33 @@ hr{
 #content .explain_event ul li:first-child{margin-right:5%}
 #content .explain_event ul li:last-child{margin-left:5%;}
 #content .sponsors{margin-bottom: 3em;}
-#content .sponsors ul li{float:left; margin-right: 2em;width:20%}
+@media screen and (min-width:768px){
+#content .sponsors ul li{float:left; margin-right: 1.5%;width:30%;display:block;min-height:8em;}
+#content .sponsors ul.organizacion li{width:50%}
+#content .sponsors ul.organizacion li.upo{width:70%}
+}
+@media screen and (max-width:768px){
+#content .sponsors ul li{float:left; margin-right:1%;width:49%}
+}
+#content .sponsors a:hover{background-color:white}
 #content .sponsors ul{width:100%}
+#content .sponsors ul li.gold{clear:both;width:100% !important;margin: 2em 0}
+#content .sponsors ul li.gold img{width:40% !important;}
 .side-ponentes li{position:relative;float:left;width:32%;margin-right:1%}
 .side-ponentes li img{max-width:100%}
 .side-ponentes li span{color:white;background:#aa0000;font-weight:bold;position:absolute;padding:0 0.25em;left:0}
+@media screen and (min-width:768px){
 .side-ponentes li span.name{top:7.5em}
 .side-ponentes li span.resume{top: 9.5em;}
+}
+@media screen and (max-width:768px)
+{
+.side-ponentes li span{display:none}
+}
 .view_more{margin-left:48%;text-align:center;font-weight:bold;}
 
 /* Twitter style */
+@media screen and (min-width:768px){
 #content .twitter_list{margin-bottom: 1em;border:1px green solid;padding:1em .5em 1em .5em;background-color:#208020;font-weight:bold}
 #content .twitter_list .tweet_list a{color:white}
 #content .twitter_list .tweet_list li{margin-bottom: 1em;border-bottom:1px #006F00 solid;padding-bottom: 0.65em}
@@ -146,20 +178,35 @@ hr{
 #content .twitter_list .tweet_list li .tweet_avatar img{border-radius: 3px;-moz-border-raidus: 3px; -webkit-border-radius: 3px;}
 #content .twitter_list .tweet_list li .tweet_text{display:block;margin-left:12%;color:white}
 #content .twitter_list .tweet_list li .tweet_join{display:none;}
+}
+@media screen and (max-width:768px){
+#content #twitter_block{display:none}
+}
+
+
 /* -----------------------------------------
    Page Name: Ponentes*
 ----------------------------------------- */
 
 .ponentes img{float:left;padding-right:0.5em;max-width:30%;}
 .ponentes p{width:70%;float:right;}
-.ponentes h3{width:100%;text-align:right;color:#999}
-
+.ponentes .title{width:100%;overflow:hidden;}
+.ponentes .title h3{width:auto;float:left;color:#999;float:right;}
+.ponentes .title a{float:left;padding:1.25em 0;float:right;}
+.ponentes .title a:hover{background:none;cursor:pointer;}
+.ponentes .title a img{width:1.75em;max-width:100%}
 /* -----------------------------------------
    Page Name: Noticias
 ----------------------------------------- */
 
-#content ul.pagination li.current a,a:hover{background-color: #00aa00; color: white;}
+#content .pagination .current a,a:hover{background-color: #00aa00; color: white;}
 
 #map { height: 400px; width: 90%;}
 .localizacion-desc {width:90%;}
 
+/* -----------------------------------------
+   Page Name: Programa
+----------------------------------------- */
+.speaker_corner{margin-top:2em;}
+.speaker_corner img{width:20%;float:left;}
+.speaker_corner p{width:79%;float:right;}

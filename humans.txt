@@ -2,7 +2,31 @@
 /* zurb.com */
 /* humanstxt.org */
 
+/* TEAM */
+  Developer: Pablo Martín
+  Site: es.linkedin.com/in/edipotrebol
+  Twitter: @edipotrebol
+  Location: Sevilla, Andalucía (Spain)
+
+  Designer & Developer: Juan Vázquez
+  Site: es.linkedin.com/in/juanvazquezmurga
+  Twitter: @jnillo9
+  Location: Sevilla, Andalucía (Spain)
+
+  Publisher: Ildefonso Monetero
+  Site: es.linkedin.com/in/ildefonsomonetero
+  Twitter: @imontero
+  Location: Sevilla, Andalucía (Spain)
+  
+  Publisher: Félix
+  Site: es.linkedin.com/in/fontanon
+  Twitter: @fontanon
+  Location: Sevilla, Andalucía (Spain)
+
 /* SITE */
+  Last update: 2012/10/30
   Standards: HTML5, CSS3
   Components: jQuery, Orbit, Reveal
   Software: Coda, Textmate, Git
+
+
