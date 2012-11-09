@@ -141,7 +141,7 @@ hr{
 #content .explain_event ul li:last-child{margin-left:5%;}
 #content .sponsors{margin-bottom: 3em;}
 @media screen and (min-width:768px){
-#content .sponsors ul li{float:left; margin-right: 1.5%;width:30%;display:block;min-height:8em;}
+#content .sponsors ul li{float:left; margin-right: 1.5%;width:30%;display:block;height:8em;}
 #content .sponsors ul.organizacion li{width:50%}
 #content .sponsors ul.organizacion li.upo{width:70%}
 }
