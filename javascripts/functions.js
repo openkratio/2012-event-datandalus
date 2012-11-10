@@ -97,7 +97,7 @@ function news_paginations(news,page)
  var html = '<div class="row"><div class="twelve columns"><ul class="pagination">',
      count = 1 ;
  
- for(i=0; i < (news.length % news_per_pages) +1; i++){
+ for(i=0; i < (news.length / news_per_pages) ; i++){
     // If is current page...
     if(page != count){
       html = html + '<li>';
