@@ -211,3 +211,4 @@ hr{
 .speaker_corner{margin-top:2em;}
 .speaker_corner img{width:20%;float:left;}
 .speaker_corner p{width:79%;float:right;}
+.speaker_corner .bg_spc{background-color:black; color:white;font-weight:bold;text-align:center;min-width:10em;height:3em}
