@@ -60,13 +60,16 @@
   <script type="text/javascript">
     $().ready(function() {
       //Init map
-      var map = L.map('map').setView([37.35674, -5.94293], 15);
+      var map = L.map('map').setView([37.35574, -5.93793], 16);
       L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: 'Datos del mapa &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
         maxZoom: 18
       }).addTo(map);
+      var marker2 = L.marker([37.355746, -5.937885]).addTo(map);
+      marker2.bindPopup('<b>Open Data Sevilla</b><br>Universidad Pablo de Olavide.<br/>Edificio 10.');
+
       var marker = L.marker([37.353955, -5.938046]).addTo(map);
-      marker.bindPopup('<b>Open Data Sevilla</b><br>Universidad Pablo de Olavide.<br/>Paraninfo.').openPopup();
+      marker.bindPopup('<b>Open Data Sevilla</b><br>Universidad Pablo de Olavide.<br/>Paraninfo.');
 
       var popup = L.popup();
     });
